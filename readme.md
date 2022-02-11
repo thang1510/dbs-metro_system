@@ -8,7 +8,7 @@
 # Database
 Name: metro_system
 # Author(s)
-* Duc Than Nguyen 
-* Huu Thuan Thang Nguyen
+* Duc Than Nguyen - Github link [ducthann](https://github.com/ducthann)
+* Huu Thuan Thang Nguyen - Github link [thang1510](https://github.com/thang1510)
 # Database description
 
