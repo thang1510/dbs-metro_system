@@ -6,9 +6,9 @@
 1. [Database description](#description)
 
 # Database
-metro_system
+Name: metro_system
 # Author(s)
-Duc Than Nguyen 
-Huu Thuan Thang Nguyen
+* Duc Than Nguyen 
+* Huu Thuan Thang Nguyen
 # Database description
 
