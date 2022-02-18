@@ -44,28 +44,52 @@
 1. **passenger_makes_payment** 
 
 It is a one-to-many relation between `passenger` and `payment`, meaning a passenger can make many payments for a trip. 
+```
+Maxima: one-many
+Minima: one-zero
+```
 
 2. **passenger_makes_reservation**
 
 It is a one-to-many (optional) relation between `passenger` and `reservation`. This relationship indicates passengers can make one or more bookings to reserve their seats.
+```
+Maxima: one-many
+Minima: one-zero
+```
 
 3. **reservation_finalizes_ticket**
 
 It is a one-to-one relation between `reservation` and `ticket`. It means that only reservations correspond with one ticket to confirm that the passenger has completed their booking.
-
+```
+Maxima: one-one
+Minima: one-one
+```
 
 4. **ticket_indicates_train**
 
 It is a many-to-one relation between `ticket` and `train`, in which one ticket corresponds with one train, but the train can include more than one ticket. 
+```
+Maxima: many-one
+Minima: zero-one
+```
 
 5. **login_user_controls_payment**
 
 It is a one-to-many relation between `login_user` and `payment` that helps administrators control passengers' payment making. 
 
-**login_user_controls_reservation**
+```
+Maxima: one-many
+Minima: one-one
+```
+
+6. **login_user_controls_reservation**
 
 Similar to `login_user_controls_payment` relation, it is a one-to-many relation between `login_user` and `reservation` that helps administrators can control passenger reservations. 
 
+```
+Maxima: one-many
+Minima: one-one
+```
 ## Attributes
 
 1. **passenger** 
