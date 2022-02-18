@@ -10,7 +10,7 @@
 ## PD3.3. - Conceptual Design (Deadline: FEB 17 AT 11:59PM)
 
 - [x] Q1 GitHub URL
-- [ ] Q2 1st ERD - analysis
-- [ ] Q3 Glossary 
-- [ ] Q4 ERD on GitHub
-- [ ] Q5 Teamwork
+- [x] Q2 1st ERD - analysis
+- [x] Q3 Glossary 
+- [x] Q4 ERD on GitHub
+- [x] Q5 Teamwork
