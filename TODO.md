@@ -14,3 +14,19 @@
 - [x] Q3 Glossary 
 - [x] Q4 ERD on GitHub
 - [x] Q5 Teamwork
+
+## PD5 - Project Outline - Logical Design (Deadline: MAR 01 AT 11:59PM)
+
+- [x] Q1 GitHub URL
+- [ ] Q2 Logical design
+- [ ] Q3 Glossary 
+- [x] Q4 ERD on GitHub
+- [x] Q5 Teamwork
+- [x] Q6 Google Forms
+- [x] Q7 Google sheets
+
+## PD6 - Front end (Deadline: MAR 10 AT 11:59PM)
+
+- [ ] Q1 GitHub URL
+- [ ] Q2 Screenshots
+- [ ] Q3 Contributors page
