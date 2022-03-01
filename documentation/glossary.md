@@ -32,21 +32,14 @@
 2. Synonyms: pass 
 3. Description: Ticket shows information about the station depart and arrive and the time of depart and disembark.
 
-**user_login**
-
-1. Name: user_login
-2. Synonyms: user
-3. Description: User_login takes a role of administration. He/she can controls information about payment and reservation. 
-
-
 ## Relationships
 
-1. **passenger_makes_payment** 
+1. **reservation_contains_payment** 
 
-It is a one-to-many relation between `passenger` and `payment`, meaning a passenger can make many payments for a trip. 
+It is a one-to-one relation between `reservation` and `payment`, meaning a reservation can contain one payment for a trip. 
 ```
-Maxima: one-many
-Minima: one-zero
+Maxima: one-one
+Minima: zero-one
 ```
 
 2. **passenger_makes_reservation**
@@ -117,9 +110,9 @@ time_arrive M-1 (1)
 ## Dependent entities and dependency relationships
 
 - passenger: independent entity
-- passenger-makes-reservation:  dependency relationship
-- reservation-contains-payment: dependency relationship
-- reservation-finalizes-ticket:  dependency relationship
+- passenger_makes_reservation:  dependency relationship
+- reservation_contains_payment: dependency relationship
+- reservation_finalizes_ticket:  dependency relationship
 
 ## Supertypes, subtypes, and partitions
 
