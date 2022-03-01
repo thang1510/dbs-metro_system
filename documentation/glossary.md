@@ -82,7 +82,6 @@ passenger_id 1-1 (1);
 ticket_id 1-1 (1);
 reservation_status M-1 (1);
 reservation_date M-1 (1)
-user_id M-M (1);
 
 3. **payment** 
 
@@ -116,7 +115,7 @@ time_arrive M-1 (1)
 
 ## Supertypes, subtypes, and partitions
 
-We do not have that 
+We do not have that.  
 
 ## Cascade and restrict actions for dependency relationships
 
