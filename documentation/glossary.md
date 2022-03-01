@@ -73,23 +73,6 @@ Maxima: many-one
 Minima: zero-one
 ```
 
-5. **login_user_controls_payment**
-
-It is a one-to-many relation between `login_user` and `payment` that helps administrators control passengers' payment making. 
-
-```
-Maxima: one-many
-Minima: one-one
-```
-
-6. **login_user_controls_reservation**
-
-Similar to `login_user_controls_payment` relation, it is a one-to-many relation between `login_user` and `reservation` that helps administrators can control passenger reservations. 
-
-```
-Maxima: one-many
-Minima: one-one
-```
 ## Attributes
 
 1. **passenger** 
@@ -97,44 +80,71 @@ Minima: one-one
 passenger_id 1-1 (1);
 fullname M-1 (1);
 address M-M (0);
-join_date 1-1 (1)
+join_date M-1 (1)
 
 2. **reservation** 
 
 reservation_id 1-1 (1);
-passenger_id M-1 (1);
+passenger_id 1-1 (1);
 ticket_id 1-1 (1);
-reservation_status 1-1 (1);
-reservation_date 1-1 (1);
+reservation_status M-1 (1);
+reservation_date M-1 (1)
 user_id M-M (1);
 
 3. **payment** 
 
-payment_id 1-1 (1);
-passenger_id 1-1 (1);
-user_id M-M (1);
-ticket_id 1-1 (1);
-payment_date 1-1 (1);
-amount 1-1 (1)
+payment_id 1-1 (1); 
+reservation_id 1-1(1); 
+ticket_id 1-1 (1); 
+payment_date M-1 (1); 
+amount M-1 (1)
 
 4. **train** 
 
-train_id 1-1 (1);
-seat_number 1-1 (1);
-train_name 1-1 (0);
-train_status 1-1 (1)
+train_id 1-1 (1); 
+seat_number M-1 (1); 
+train_name 1-1 (0); 
+train_status M-1 (1)
 
 5. **ticket** 
 
-ticket_id 1-1 (1);  
-station_depart 1-1 (1);
-station_arrive 1-1 (1);
-time_depart 1-1 (1);
-time_arrive 1-1 (1) 
+ticket_id 1-1 (1);
+station_depart M-1 (1); 
+station_arrive M-1 (1); 
+time_depart M-1 (1); 
+time_arrive M-1 (1)
 
-6. **user_login** 
+## Dependent entities and dependency relationships
 
-user_id 1-1 (1);
-user_name 1-1 (1);
-user_password 1-1 (1)
+- passenger: independent entity
+- passenger-makes-reservation:  dependency relationship
+- reservation-contains-payment: dependency relationship
+- reservation-finalizes-ticket:  dependency relationship
+
+## Supertypes, subtypes, and partitions
+
+We do not have that 
+
+## Cascade and restrict actions for dependency relationships
+
+### Cascade
+- reservation relects change to payment 
+- reservation relects change to ticket 
+### Restrict 
+- Cannot remove passenger if reservation is using it
+- Cannot remove reservation if payment is using it
+- Cannot remove reservation if ticket is using it
+
+## Cascade and restrict rules on foreign keys that implement dependency relationships
+
+### Cascade
+- `passenger_id` reflects change onto access from `passenger`
+- `ticket_id` reflects change onto access from `payment` and `ticket`
+### Restrict 
+- Cannot remove the foreign key `passenger_id` while being used by `passenger`
+- Cannot remove the foreign key `ticket_id` while being used by `payment` and `ticket`
+
+## Implementing attribute types
+
+
 
