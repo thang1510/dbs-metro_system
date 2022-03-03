@@ -100,6 +100,7 @@ train_status M-1 (1)
 5. **ticket** 
 
 ticket_id 1-1 (1);
+train_id 1-1 (1);
 station_depart M-1 (1); 
 station_arrive M-1 (1); 
 time_depart M-1 (1); 
@@ -166,7 +167,7 @@ amount M-1 DECIMAL(10,2) NOT NULL
 4. **train** 
 ```
 train_id (PK) INT NOT NULL; 
-seat_number (FK) INT NOT NULL; 
+seat_number INT NOT NULL; 
 train_name VARCHAR(20); 
 train_status BOOLEAN NOT NULL
 ```
@@ -174,6 +175,7 @@ train_status BOOLEAN NOT NULL
 5. **ticket** 
 ```
 ticket_id (PK) INT NOT NULL;
+train_id (FK) INT NOT NULL; 
 station_depart VARCHAR(20) NOT NULL; 
 station_arrive VARCHAR(20) NOT NULL; 
 time_depart DATETIME NOT NULL; 
