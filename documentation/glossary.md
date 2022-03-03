@@ -139,41 +139,46 @@ We do not have that.
 
 
 1. **passenger** 
-
+```
 passenger_id (PK) INT NOT NULL;
 fullname VARCHAR(50) NOT NULL;
 address VARCHAR(50);
 join_date DATETIME NOT NULL
+```
 
 2. **reservation** 
-
+```
 reservation_id (PK) INT NOT NULL;
 passenger_id (FK) INT NOT NULL;
 ticket_id (FK) INT NOT NULL;
 reservation_status BOOLEAN NOT NULL;
 reservation_date DATETIME NOT NULL
+```
 
 3. **payment** 
-
+```
 payment_id (PK) INT NOT NULL; 
 reservation_id (FK) INT NOT NULL; 
 payment_date DATETIME NOT NULL; 
 amount M-1 DECIMAL(10,2) NOT NULL
+```
 
 4. **train** 
-
+```
 train_id (PK) INT NOT NULL; 
 seat_number (FK) INT NOT NULL; 
 train_name VARCHAR(20); 
 train_status BOOLEAN NOT NULL
+```
 
 5. **ticket** 
-
+```
 ticket_id (PK) INT NOT NULL;
 station_depart VARCHAR(20) NOT NULL; 
 station_arrive VARCHAR(20) NOT NULL; 
 time_depart DATETIME NOT NULL; 
 time_arrive DATETIME NOT NULL
+```
 
 ## Plural attributes
 
