@@ -29,4 +29,4 @@
 
 - [ ] Q1 GitHub URL
 - [ ] Q2 Screenshots
-- [ ] Q3 Contributors page
+- [x] Q3 Contributors page
