@@ -46,7 +46,11 @@
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
-
+			<a href="<c:url value='/jsps/passenger/passenger_menu.jsp'/>" target="body">Passenger</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/ticket/ticket_menu.jsp'/>" target="body">Ticket</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/payment/payment_menu.jsp'/>" target="body">Payment</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/train/train_menu.jsp'/>" target="body">Train</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/reservation/reservation_menu.jsp'/>" target="body">Reservation</a> |&nbsp;&nbsp;				
 		</c:otherwise>
 	</c:choose>
 

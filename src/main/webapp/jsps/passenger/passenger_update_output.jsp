@@ -24,16 +24,18 @@
   <h1>Update Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Passenger ID: <input type="text" name="passenger_id" value="${entity1.username }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Full Name：<input type="text" name="fullname" value="${entity1.password }" disabled />
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Address：<input type="text" name="address" value="${entity1.email }" disabled/>
+	<br/>
+	Join date：<input type="text" name="join_date" value="${entity1.email }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/PassengerServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 				<input type="hidden" name="username" value="${entity1.username }"/>
 	Password：<input type="password" name="password" value="${form.password }"/>
