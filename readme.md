@@ -17,36 +17,56 @@ We were inspired by making cities inclusive, safe, resilient, and sustainable ([
 
 # CRUD Screenshots 
 # CRUD for Passenger
-![passenger_menu]()  
-![passenger_create]()  
-![passenger_update]() 
-![passenger_read]()
-![passenger_delete]()
+![passenger_menu](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/passenger/crud_passenger.png)
+
+![passenger_create](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/passenger/create_passenger.png)  
+
+![passenger_update](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/passenger/update_passenger.png) 
+
+![passenger_read](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/passenger/read_passenger.png)
+
+![passenger_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/passenger/delete_passenger.png)
 
 # CRUD for Ticket
 ![ticket_menu]()  
+
 ![ticket_create]()  
+
 ![ticket_update]() 
+
 ![ticket_read]()
+
 ![ticket_delete]()
 
 # CRUD for Payment
 ![payment_menu]()  
+
 ![payment_create]()  
+
 ![payment_update]() 
+
 ![payment_read]()
+
 ![payment_delete]()
 
 # CRUD for Train
 ![train_menu]()  
+
 ![train_create]()  
+
 ![train_update]() 
+
 ![train_read]()
+
 ![train_delete]()
 
 # CRUD for Reservation
 ![reservation_menu]()  
+
 ![reservation_create]()  
+
 ![reservation_update]() 
+
 ![reservation_read]()
+
 ![reservation_delete]()
