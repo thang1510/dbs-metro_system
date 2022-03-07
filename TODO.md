@@ -27,6 +27,6 @@
 
 ## PD6 - Front end (Deadline: MAR 10 AT 11:59PM)
 
-- [ ] Q1 GitHub URL
+- [x] Q1 GitHub URL
 - [ ] Q2 Screenshots
 - [x] Q3 Contributors page
