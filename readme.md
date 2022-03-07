@@ -28,15 +28,15 @@ We were inspired by making cities inclusive, safe, resilient, and sustainable ([
 ![passenger_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/passenger/delete_passenger.png)
 
 # CRUD for Ticket
-![ticket_menu]()  
+![ticket_menu](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/ticket/crud_ticket.png)  
 
-![ticket_create]()  
+![ticket_create](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/ticket/create_ticket.png)  
 
-![ticket_update]() 
+![ticket_update](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/ticket/update_ticket.png) 
 
-![ticket_read]()
+![ticket_read](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/ticket/read_ticket.png)
 
-![ticket_delete]()
+![ticket_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/ticket/delete_ticket.png)
 
 # CRUD for Payment
 ![payment_menu]()  
