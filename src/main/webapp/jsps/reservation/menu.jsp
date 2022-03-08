@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for Payment </h1>
+    <h1>CRUD operations for Entity1 </h1>
     <br>
-	<a href="<c:url value='/jsps/payment/payment_create.jsp'/>" target="_parent">Create Payment</a> |&nbsp; 
-	<a href="<c:url value='/jsps/payment/payment_read.jsp'/>" target="_parent">Read Payment</a> |&nbsp;
-	<a href="<c:url value='/jsps/payment/payment_update.jsp'/>" target="_parent">Update Payment</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/payment/payment_delete.jsp'/>" target="_parent">Delete Payment</a>	
+	<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Entity1</a> |&nbsp; 
+	<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Entity1</a> |&nbsp;
+	<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Entity1</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Entity1</a>	
 	    
   </body>
 </html>

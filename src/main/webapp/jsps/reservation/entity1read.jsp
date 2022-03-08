@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Payment</title>
+    <title>Read Entity1</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,11 +21,11 @@
   </head>
   
   <body>
-  <h1>Read Payment</h1>
+  <h1>Read Entity1</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/PaymentServletRead'/>" method="post">
+<form action="<c:url value='/Entity1ServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
+	User    :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
@@ -34,7 +34,7 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/> --%>
-	<input type="submit" value="Read Payment"/>
+	<input type="submit" value="Read Entity1"/>
 </form>
   </body>
 </html>
