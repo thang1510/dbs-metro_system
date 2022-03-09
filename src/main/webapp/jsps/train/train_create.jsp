@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity1</title>
+    <title>Train Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,21 @@
   </head>
   
   <body>
-  <h1>Delete Entity1</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete User   :<input type="text" name="username" value="${form.username }"/>
+  <h1>Train Create</h1>
+<form action="<c:url value='/TrainServletCreate'/>" method="post">
+	Train ID    :<input type="text" name="train_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Seat number    :<input type="text" name="seat_number" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	Train name    :<input type="text" name="train_name" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	Train status    :<input type="text" name="train_status" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	<input type="submit" value="Create Train"/>
 </form>
   </body>
 </html>

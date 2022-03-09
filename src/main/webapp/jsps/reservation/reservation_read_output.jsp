@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Reservation Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,18 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Reservation Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	Reservation ID    :<input type="text" name="reservation_id" value="${reservation.username }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Passenger ID     :<input type="text" name="passenger_id" value="${reservation.username }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Ticket ID    :<input type="text" name="ticket_id" value="${reservation.username }" disabled/>
+	<br/>
+	Reservation status    :<input type="text" name="reservation_status" value="${reservation.username }" disabled/>
+	<br/>
+	Reservation date    :<input type="text" name="reservation_date" value="${reservation.username }" disabled/>
 	<br/>
 </form>
 

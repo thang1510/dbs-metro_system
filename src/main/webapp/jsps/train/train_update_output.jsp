@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Update Train</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,17 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Train</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Train ID    :<input type="text" name="train_id" value="${Train.username }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Seat number    :<input type="text" name="seat_number" value="${Train.username }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Train name    :<input type="text" name="train_name" value="${Train.username }" disabled/>
+	<br/>
+	Train status    :<input type="text" name="train_status" value="${Train.username }" disabled/>
+	<br/>
 	<br/>
 </form>
 <h1>Update the values below</h1>

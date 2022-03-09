@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Update Reservation</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,22 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Reservation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Reservation ID    :<input type="text" name="reservation_id" value="${reservation.username }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Passenger ID     :<input type="text" name="passenger_id" value="${reservation.username }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Ticket ID    :<input type="text" name="ticket_id" value="${reservation.username }" disabled/>
+	<br/>
+	Reservation status    :<input type="text" name="reservation_status" value="${reservation.username }" disabled/>
+	<br/>
+	Reservation date    :<input type="text" name="reservation_date" value="${reservation.username }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/ReservationServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 				<input type="hidden" name="username" value="${entity1.username }"/>
 	Password：<input type="password" name="password" value="${form.password }"/>
@@ -42,7 +45,7 @@
 	Email	：<input type="text" name="email" value="${form.email }"/>
 	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update Reservation"/>
 </form>
 
 </body>

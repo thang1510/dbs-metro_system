@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity1</title>
+    <title>Read Train Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,19 @@
   </head>
   
   <body>
-  <h1>Delete Entity1</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+  <h1>Read Train Output</h1>
+<p style="color: red; font-weight: 900">${msg }</p>
+<form>
+	Train ID    :<input type="text" name="train_id" value="${Train.username }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Seat number    :<input type="text" name="seat_number" value="${Train.username }" disabled/>
+	<br/>
+	Train name    :<input type="text" name="train_name" value="${Train.username }" disabled/>
+	<br/>
+	Train status    :<input type="text" name="train_status" value="${Train.username }" disabled/>
+	<br/>
 </form>
-  </body>
+
+<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
+</body>
 </html>

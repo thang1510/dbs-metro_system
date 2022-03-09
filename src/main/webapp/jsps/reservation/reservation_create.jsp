@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Payment Create</title>
+    <title>Reservation Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,21 +21,24 @@
   </head>
   
   <body>
-  <h1>Payment Create</h1>
-<form action="<c:url value='/PaymentServletCreate'/>" method="post">
-	Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
+  <h1>Reservation Create</h1>
+<form action="<c:url value='/ReservationServletCreate'/>" method="post">
+	Reservation ID    :<input type="text" name="reservation_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
+	Passenger ID    :<input type="text" name="passenger_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Payment date: <input type="text" name="payment_date" value="${form.username }"/>
+	Ticket ID    :<input type="text" name="ticket_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	amount: <input type="text" name="amount" value="${form.username }"/>
+	Reservation status    :<input type="text" name="reservation_status" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Create Payment"/>
+	Reservation date    :<input type="text" name="reservation_date" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	<input type="submit" value="Create Reservation"/>
 </form>
   </body>
 </html>

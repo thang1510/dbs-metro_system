@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Payment</title>
+    <title>Delete Reservation</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,20 +21,22 @@
   </head>
   
   <body>
-  <h1>Delete Payment</h1>
+  <h1>Delete Reservation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ReservationServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	Payment ID    :<input type="text" name="payment_id" value="${payment.username }" disabled/>
+		<input type="hidden" name="username" value="${reservation.username }"/>
+	Reservation ID    :<input type="text" name="reservation_id" value="${reservation.username }" disabled/>
 	<br/>
-	Reservation ID    :<input type="text" name="reservation_id" value="${payment.username }" disabled/>
+	Passenger ID     :<input type="text" name="passenger_id" value="${reservation.username }" disabled/>
 	<br/>
-	Payment date    :<input type="text" name="payment_date" value="${payment.username }" disabled/>
+	Ticket ID    :<input type="text" name="ticket_id" value="${reservation.username }" disabled/>
 	<br/>
-	amount    :<input type="text" name="amount" value="${payment.username }" disabled/>
+	Reservation status    :<input type="text" name="reservation_status" value="${reservation.username }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Payment"/>
+	Reservation date    :<input type="text" name="reservation_date" value="${reservation.username }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Reservation"/>
 </form>
 
 </body>

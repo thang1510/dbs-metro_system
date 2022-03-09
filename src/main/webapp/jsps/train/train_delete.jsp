@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>Delete Train</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+  <h1>Delete Train</h1>
+<form action="<c:url value='/TrainServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
+	Delete Train   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Delete Train"/>
 </form>
   </body>
 </html>

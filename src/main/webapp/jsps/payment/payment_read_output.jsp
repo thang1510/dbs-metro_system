@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Payment Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,14 +21,16 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Payment Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	Payment ID    :<input type="text" name="payment_id" value="${payment.username }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Reservation ID    :<input type="text" name="reservation_id" value="${payment.username }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Payment date    :<input type="text" name="payment_date" value="${payment.username }" disabled/>
+	<br/>
+	amount    :<input type="text" name="amount" value="${payment.username }" disabled/>
 	<br/>
 </form>
 
