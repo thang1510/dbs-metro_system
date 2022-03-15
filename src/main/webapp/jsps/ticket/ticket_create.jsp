@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Ticket Create</h1>
+  <h1>Create Ticket</h1>
 <form action="<c:url value='/TicketServletCreate'/>" method="post">
 	Ticket ID: <input type="text" name="ticket_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>

@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Train Create</h1>
+  <h1>Create Train</h1>
 <form action="<c:url value='/TrainServletCreate'/>" method="post">
 	Train ID: <input type="text" name="train_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>

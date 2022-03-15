@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Reservation Create</h1>
+  <h1>Create Reservation</h1>
 <form action="<c:url value='/ReservationServletCreate'/>" method="post">
 	Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>

@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Payment Create</h1>
+  <h1>Create Payment</h1>
 	<form action="<c:url value='/PaymentServletCreate'/>" method="post">
 		Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
 		<span style="color: red; font-weight: 900">${errors.username }</span>

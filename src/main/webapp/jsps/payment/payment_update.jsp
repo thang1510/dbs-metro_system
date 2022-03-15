@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Payment</h1>
 	<form action="<c:url value='/PaymentServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="search"/>
 			Payment ID: <input type="text" name="payment_id" value="${form.username }"/>

@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Reservation</h1>
 	<form action="<c:url value='/ReservationServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 		Reservation ID: <input type="text" name="username" value="${form.username }"/>
