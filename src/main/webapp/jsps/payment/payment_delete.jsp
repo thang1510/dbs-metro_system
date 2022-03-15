@@ -22,12 +22,12 @@
   
   <body>
   <h1>Delete Payment</h1>
-<form action="<c:url value='/PaymentServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete Payment ID   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-	<input type="submit" value="Delete Payment"/>
-</form>
+	<form action="<c:url value='/PaymentServletDelete'/>" method="post">
+		<input type="hidden" name="method" value="search"/>
+			Payment ID   :<input type="text" name="username" value="${form.username }"/>
+		<span style="color: red; font-weight: 900">${errors.username }</span>
+		<br/>
+		<input type="submit" value="Delete Payment"/>
+	</form>
   </body>
 </html>

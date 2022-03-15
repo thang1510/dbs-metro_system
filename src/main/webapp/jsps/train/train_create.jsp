@@ -23,16 +23,16 @@
   <body>
   <h1>Train Create</h1>
 <form action="<c:url value='/TrainServletCreate'/>" method="post">
-	Train ID    :<input type="text" name="train_id" value="${form.username }"/>
+	Train ID: <input type="text" name="train_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Seat number    :<input type="text" name="seat_number" value="${form.username }"/>
+	Seat number: <input type="text" name="seat_number" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Train name    :<input type="text" name="train_name" value="${form.username }"/>
+	Train name: <input type="text" name="train_name" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Train status    :<input type="text" name="train_status" value="${form.username }"/>
+	Train status: <input type="text" name="train_status" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Create Train"/>

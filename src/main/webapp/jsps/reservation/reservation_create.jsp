@@ -23,19 +23,19 @@
   <body>
   <h1>Reservation Create</h1>
 <form action="<c:url value='/ReservationServletCreate'/>" method="post">
-	Reservation ID    :<input type="text" name="reservation_id" value="${form.username }"/>
+	Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Passenger ID    :<input type="text" name="passenger_id" value="${form.username }"/>
+	Passenger ID: <input type="text" name="passenger_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Ticket ID    :<input type="text" name="ticket_id" value="${form.username }"/>
+	Ticket ID: <input type="text" name="ticket_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Reservation status    :<input type="text" name="reservation_status" value="${form.username }"/>
+	Reservation status: <input type="text" name="reservation_status" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Reservation date    :<input type="text" name="reservation_date" value="${form.username }"/>
+	Reservation date: <input type="text" name="reservation_date" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Create Reservation"/>

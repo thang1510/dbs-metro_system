@@ -22,15 +22,15 @@
   
   <body>
   <h1>Update Payment</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	Payment ID    :<input type="text" name="payment_id" value="${payment.username }" disabled/>
-	<br/>
-	Reservation ID    :<input type="text" name="reservation_id" value="${payment.username }" disabled/>
-	<br/>
-	Payment date    :<input type="text" name="payment_date" value="${payment.username }" disabled/>
-	<br/>
-	amount    :<input type="text" name="amount" value="${payment.username }" disabled/>
+	<p style="color: red; font-weight: 900">${msg }</p>
+	<form>
+		Payment ID: <input type="text" name="payment_id" value="${payment.username }" disabled/>
+		<br/>
+		Reservation ID: <input type="text" name="reservation_id" value="${payment.username }" disabled/>
+		<br/>
+		Payment date: <input type="text" name="payment_date" value="${payment.username }" disabled/>
+		<br/>
+		Amount: <input type="text" name="amount" value="${payment.username }" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>

@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/Entity1ServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	Reservation ID    :<input type="text" name="reservation_id" value="${form.username }"/>
+		Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
