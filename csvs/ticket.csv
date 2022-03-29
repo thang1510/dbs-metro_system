@@ -1,0 +1,6 @@
+ticket_id (INT),train_id (INT),station_depart (VARCHAR),station_arrive (VARCHAR),time_depart (DATETIME),time_arrive (DATETIME)
+1,5,Ben Thanh,Mien Dong,2022-01-03 13:23,2022-01-03 14:23
+2,3,Ba Queo,Thu Thiem,2022-01-04 14:21,2022-01-04 15:26
+3,2,Tan Kien,Go Vap,2022-01-05 17:23,2022-01-05 19:00
+4,4,Can Guoc,Dam Sen,2022-01-06 10:23,2022-01-06 12:45
+5,1,Tan Son Nhat,Tham Luong,2022-01-07 08:12,2022-01-07 10:16

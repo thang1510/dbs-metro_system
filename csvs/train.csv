@@ -1,0 +1,6 @@
+train_id (INT),seat_number (INT),train_name (VARCHAR),train_status (Boolean)
+1,100,Blue,TRUE
+2,100,Yellow,TRUE
+3,100,Green,FALSE
+4,104,Red,TRUE
+5,1000,Violet,TRUE

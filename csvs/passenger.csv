@@ -1,0 +1,6 @@
+passenger_id (INT),fullname (VARCHAR),address  (VARCHAR),join_date (DATETIME)
+1,Takanashi Kiara,1234 Random st,2020-01-03 11:43
+2,Gawr Gura,HololiveEN st,2020-01-04 12:27
+3,Ninomae Ina'nis,Takobell boulevard,2021-01-05 19:45
+4,Le Thanh Thao,61 Sheridan st,2019-01-05 19:41
+5,Nguyen Duc Nghia,75 West st,2021-01-06 12:45
