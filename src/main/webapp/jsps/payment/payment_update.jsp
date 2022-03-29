@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Update</h1>
-<form action="<c:url value='/PaymentServletUpdate'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Update Payment   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
-	<input type="submit" value="Update Payment"/>
-</form>
+  <h1>Update Payment</h1>
+	<form action="<c:url value='/PaymentServletUpdate'/>" method="post">
+		<input type="hidden" name="method" value="search"/>
+			Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
+		<span style="color: red; font-weight: 900">${errors.username }</span>
+		<br/>
+		<input type="submit" value="Update Payment"/>
+	</form>
   </body>
 </html>

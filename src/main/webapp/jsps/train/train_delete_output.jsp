@@ -26,14 +26,14 @@
 <form action="<c:url value='/TrainServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="username" value="${Train.username }"/>
-	Train ID    :<input type="text" name="train_id" value="${Train.username }" disabled/>
-	<br/>
-	Seat number    :<input type="text" name="seat_number" value="${Train.username }" disabled/>
-	<br/>
-	Train name    :<input type="text" name="train_name" value="${Train.username }" disabled/>
-	<br/>
-	Train status    :<input type="text" name="train_status" value="${Train.username }" disabled/>
-	<br/>
+			Train ID: <input type="text" name="train_id" value="${Train.username }" disabled/>
+		<br/>
+			Seat number: <input type="text" name="seat_number" value="${Train.username }" disabled/>
+		<br/>
+			Train name: <input type="text" name="train_name" value="${Train.username }" disabled/>
+		<br/>
+			Train status: <input type="text" name="train_status" value="${Train.username }" disabled/>
+		<br/>
 	<input type="submit" value="Delete Train"/>
 </form>
 

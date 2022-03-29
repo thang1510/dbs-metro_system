@@ -28,5 +28,13 @@
 ## PD6 - Front end (Deadline: MAR 10 AT 11:59PM)
 
 - [x] Q1 GitHub URL
-- [ ] Q2 Screenshots
+- [x] Q2 Screenshots
 - [x] Q3 Contributors page
+
+## PD7 - Physical Design and SQL scripts (MAR 31 AT 7:00PM)
+
+- [x] Q1 Instructions
+- [x] Q2 CSVS folder
+- [x] Q3 SQL folder
+- [ ] Q4 Physical design
+- [x] Q5 Documentation folder

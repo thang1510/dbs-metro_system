@@ -21,10 +21,10 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Ticket</h1>
 <form action="<c:url value='/TicketServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Ticket ID: <input type="text" name="username" value="${form.username }"/>
+		Ticket ID: <input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Update Ticket"/>

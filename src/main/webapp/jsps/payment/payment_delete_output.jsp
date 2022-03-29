@@ -26,13 +26,13 @@
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="username" value="${entity1.username }"/>
-	Payment ID    :<input type="text" name="payment_id" value="${payment.username }" disabled/>
-	<br/>
-	Reservation ID    :<input type="text" name="reservation_id" value="${payment.username }" disabled/>
-	<br/>
-	Payment date    :<input type="text" name="payment_date" value="${payment.username }" disabled/>
-	<br/>
-	amount    :<input type="text" name="amount" value="${payment.username }" disabled/>
+		Payment ID: <input type="text" name="payment_id" value="${payment.username }" disabled/>
+		<br/>
+		Reservation ID: <input type="text" name="reservation_id" value="${payment.username }" disabled/>
+		<br/>
+		Payment date: <input type="text" name="payment_date" value="${payment.username }" disabled/>
+		<br/>
+		Amount: <input type="text" name="amount" value="${payment.username }" disabled/>
 	<br/>
 	<input type="submit" value="Delete Payment"/>
 </form>

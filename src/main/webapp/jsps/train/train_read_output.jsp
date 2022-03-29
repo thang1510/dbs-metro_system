@@ -24,13 +24,13 @@
   <h1>Read Train Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Train ID    :<input type="text" name="train_id" value="${Train.username }" disabled/>
+	Train ID: <input type="text" name="train_id" value="${Train.username }" disabled/>
 	<br/>
-	Seat number    :<input type="text" name="seat_number" value="${Train.username }" disabled/>
+	Seat number: <input type="text" name="seat_number" value="${Train.username }" disabled/>
 	<br/>
-	Train name    :<input type="text" name="train_name" value="${Train.username }" disabled/>
+	Train name: <input type="text" name="train_name" value="${Train.username }" disabled/>
 	<br/>
-	Train status    :<input type="text" name="train_status" value="${Train.username }" disabled/>
+	Train status: <input type="text" name="train_status" value="${Train.username }" disabled/>
 	<br/>
 </form>
 

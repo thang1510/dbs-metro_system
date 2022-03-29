@@ -24,15 +24,15 @@
   <h1>Read Reservation Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Reservation ID    :<input type="text" name="reservation_id" value="${reservation.username }" disabled/>
+	Reservation ID: <input type="text" name="reservation_id" value="${reservation.username }" disabled/>
 	<br/>
-	Passenger ID     :<input type="text" name="passenger_id" value="${reservation.username }" disabled/>
+	Passenger ID: <input type="text" name="passenger_id" value="${reservation.username }" disabled/>
 	<br/>
-	Ticket ID    :<input type="text" name="ticket_id" value="${reservation.username }" disabled/>
+	Ticket ID: <input type="text" name="ticket_id" value="${reservation.username }" disabled/>
 	<br/>
-	Reservation status    :<input type="text" name="reservation_status" value="${reservation.username }" disabled/>
+	Reservation status: <input type="text" name="reservation_status" value="${reservation.username }" disabled/>
 	<br/>
-	Reservation date    :<input type="text" name="reservation_date" value="${reservation.username }" disabled/>
+	Reservation date: <input type="text" name="reservation_date" value="${reservation.username }" disabled/>
 	<br/>
 </form>
 

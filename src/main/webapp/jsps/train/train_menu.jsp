@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for train </h1>
+    <h1>CRUD operations for Train </h1>
     <br>
-	<a href="<c:url value='/jsps/train/train_create.jsp'/>" target="_parent">Create train</a> |&nbsp; 
-	<a href="<c:url value='/jsps/train/train_read.jsp'/>" target="_parent">Read train</a> |&nbsp;
-	<a href="<c:url value='/jsps/train/train_update.jsp'/>" target="_parent">Update train</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/train/train_delete.jsp'/>" target="_parent">Delete train</a>	
+	<a href="<c:url value='/jsps/train/train_create.jsp'/>" target="_parent">Create Train</a> |&nbsp; 
+	<a href="<c:url value='/jsps/train/train_read.jsp'/>" target="_parent">Read Train</a> |&nbsp;
+	<a href="<c:url value='/jsps/train/train_update.jsp'/>" target="_parent">Update Train</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/train/train_delete.jsp'/>" target="_parent">Delete Train</a>	
 	    
   </body>
 </html>

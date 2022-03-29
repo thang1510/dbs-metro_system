@@ -22,16 +22,16 @@
   
   <body>
   <h1>Update Train</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	Train ID    :<input type="text" name="train_id" value="${Train.username }" disabled/>
-	<br/>
-	Seat number    :<input type="text" name="seat_number" value="${Train.username }" disabled/>
-	<br/>
-	Train name    :<input type="text" name="train_name" value="${Train.username }" disabled/>
-	<br/>
-	Train status    :<input type="text" name="train_status" value="${Train.username }" disabled/>
-	<br/>
+	<p style="color: red; font-weight: 900">${msg }</p>
+	<form>
+		Train ID: <input type="text" name="train_id" value="${Train.username }" disabled/>
+		<br/>
+		Seat number: <input type="text" name="seat_number" value="${Train.username }" disabled/>
+		<br/>
+		Train name: <input type="text" name="train_name" value="${Train.username }" disabled/>
+		<br/>
+		Train status: <input type="text" name="train_status" value="${Train.username }" disabled/>
+		<br/>
 	<br/>
 </form>
 <h1>Update the values below</h1>

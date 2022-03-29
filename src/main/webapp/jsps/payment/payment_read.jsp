@@ -22,12 +22,12 @@
   
   <body>
   <h1>Read Payment</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/PaymentServletRead'/>" method="post">
-	<input type="hidden" name="method" value="regist"/>
-	Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
+	<p style="color: red; font-weight: 900">${msg }</p>
+	<form action="<c:url value='/PaymentServletRead'/>" method="post">
+		<input type="hidden" name="method" value="regist"/>
+			Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
+		<span style="color: red; font-weight: 900">${errors.username }</span>
+		<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>

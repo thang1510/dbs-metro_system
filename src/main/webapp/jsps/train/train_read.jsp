@@ -22,10 +22,10 @@
   
   <body>
   <h1>Read Train</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/TrainServletRead'/>" method="post">
+	<p style="color: red; font-weight: 900">${msg }</p>
+	<form action="<c:url value='/TrainServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	Train ID    :<input type="text" name="train_id" value="${form.username }"/>
+		Train ID: <input type="text" name="train_id" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>

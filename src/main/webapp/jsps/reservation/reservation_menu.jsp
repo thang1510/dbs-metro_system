@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for reservation </h1>
+    <h1>CRUD operations for Reservation </h1>
     <br>
-	<a href="<c:url value='/jsps/reservation/reservation_create.jsp'/>" target="_parent">Create reservation</a> |&nbsp; 
-	<a href="<c:url value='/jsps/reservation/reservation_read.jsp'/>" target="_parent">Read reservation</a> |&nbsp;
-	<a href="<c:url value='/jsps/reservation/reservation_update.jsp'/>" target="_parent">Update reservation</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/reservation/reservation_delete.jsp'/>" target="_parent">Delete reservation</a>	
+	<a href="<c:url value='/jsps/reservation/reservation_create.jsp'/>" target="_parent">Create Reservation</a> |&nbsp; 
+	<a href="<c:url value='/jsps/reservation/reservation_read.jsp'/>" target="_parent">Read Reservation</a> |&nbsp;
+	<a href="<c:url value='/jsps/reservation/reservation_update.jsp'/>" target="_parent">Update Reservation</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/reservation/reservation_delete.jsp'/>" target="_parent">Delete Reservation</a>	
 	    
   </body>
 </html>

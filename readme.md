@@ -39,34 +39,34 @@ We were inspired by making cities inclusive, safe, resilient, and sustainable ([
 ![ticket_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/ticket/delete_ticket.png)
 
 # CRUD for Payment
-![payment_menu]()  
+![payment_menu](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/payment/crud_payment.PNG)  
 
-![payment_create]()  
+![payment_create](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/payment/create_payment.PNG)  
 
-![payment_update]() 
+![payment_update](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/payment/update_payment.PNG) 
 
-![payment_read]()
+![payment_read](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/payment/read_payment.PNG)
 
-![payment_delete]()
+![payment_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/payment/delete_payment.PNG)
 
 # CRUD for Train
-![train_menu]()  
+![train_menu](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/train/crud_train.PNG)  
 
-![train_create]()  
+![train_create](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/train/create_train.PNG)  
 
-![train_update]() 
+![train_update](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/train/update_train.PNG) 
 
-![train_read]()
+![train_read](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/train/read_train.PNG)
 
-![train_delete]()
+![train_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/train/delete_train.PNG)
 
 # CRUD for Reservation
-![reservation_menu]()  
+![reservation_menu](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/reservation/crud_reservation.PNG)  
 
-![reservation_create]()  
+![reservation_create](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/reservation/create_reservation.PNG)  
 
-![reservation_update]() 
+![reservation_update](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/reservation/update_reservation.PNG) 
 
-![reservation_read]()
+![reservation_read](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/reservation/read_reservation.PNG)
 
-![reservation_delete]()
+![reservation_delete](https://github.com/CS480UIC/dbs-metro_system/blob/main/screenshots/reservation/delete_reservation.PNG)
