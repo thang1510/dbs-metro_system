@@ -1,3 +1,5 @@
+USE dbs_metro_system;
+
 INSERT INTO `passenger` (`passenger_id`, `fullname`, `address`, `join_date`)
 VALUES (1,'Takanashi Kiara','1234 Random st','2020-01-03 11:43:00'),
 (2,'Gawr Gura','HololiveEN st','2020-01-04 12:27:00'),
