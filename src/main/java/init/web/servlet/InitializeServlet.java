@@ -1,6 +1,7 @@
 package init.web.servlet;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -44,9 +45,13 @@ public class InitializeServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		InitService initService = new InitService();
 		
+		//Read the file from webapp/sql
+		InputStream input = getServletContext().getResourceAsStream("/sql/initializeDB.sql");
+
+		
 		try {
 			try {
-				initService.initializeDB();
+				initService.initializeDB(input);
 				response.sendRedirect( request.getContextPath() + "/jsps/user/login.jsp");
 			} 
 			catch (ClassNotFoundException | InitException e) {
