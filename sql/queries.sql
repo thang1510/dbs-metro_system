@@ -49,6 +49,3 @@ WHERE EXISTS
         SELECT payment_id FROM payment
     ) 
     AND payment.amount > 50000;
-
-
-
