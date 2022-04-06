@@ -143,9 +143,9 @@ We do not have that.
 ```
 + passenger_id (PK) INT NOT NULL
 passenger_id describes the entry identification of the passenger, and its type is an integer. 
-+ fullname VARCHAR(50) NOT NULL
++ fullname VARCHAR(100) NOT NULL
 fullname is the passenger's name, and its type is a string that can hold up to 50 characters. 
-+ address VARCHAR(50)
++ address VARCHAR(100)
 address is the passenger's address, and its type is a string that can hold up to 50 characters. 
 + join_date DATETIME NOT NULL
 join_date is used for the date-time attribute, which identifies the passenger joins.
@@ -173,7 +173,7 @@ payment_id describes the entry identification of the payment, and its type is an
 reservation_id describes the entry identification of the booking reservation, and its type is an integer. 
 + payment_date DATETIME NOT NULL
 payment_date is used for the date-time attribute, which identifies the passengers paid. 
-+ amount M-1 DECIMAL(10,2) NOT NULL
++ amount M-1 DECIMAL(10,0) NOT NULL
 amount indicates the amount of money that the passengers paid. Its type is decimal, and its unit is Vietnam's national currency (VND).
 ```
 
@@ -183,7 +183,7 @@ amount indicates the amount of money that the passengers paid. Its type is decim
 train_id describes the entry identification of the payment, and its type is an integer. 
 + seat_number INT NOT NULL 
 seat_number indicates the passenger capacity of the train. Its type is an integer.
-+ train_name VARCHAR(20) 
++ train_name VARCHAR(100) 
 train_name indicates train's name, and its type is a string that can hold up to 20 characters. E.g., Yellow, Green, Violet.  
 + train_status BOOLEAN NOT NULL
 train_status describes the status of the train. There is two status: (1) True - good and (2) False - maintained
@@ -196,9 +196,9 @@ train_status describes the status of the train. There is two status: (1) True - 
 ticket_id describes the entry identification of the ticket that the passenger confirms, and its type is an integer. 
 + train_id (FK) INT NOT NULL
 train_id describes the entry identification of the payment, and its type is an integer.
-+ station_depart VARCHAR(20) NOT NULL
++ station_depart VARCHAR(100) NOT NULL
 station_depart indicates the location that the train departs. Its type is a string that can hold up to 20 characters.
-+ station_arrive VARCHAR(20) NOT NULL
++ station_arrive VARCHAR(100) NOT NULL
 station_depart indicates the location that the train arrives. Its type is a string that can hold up to 20 characters.
 + time_depart DATETIME NOT NULL
 time_depart is used for the date-time attribute, which identifies the train departs.
