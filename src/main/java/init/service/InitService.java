@@ -1,7 +1,6 @@
 package init.service;
 
 import java.io.InputStream;
-import java.util.List;
 
 import init.dao.InitDao;
 

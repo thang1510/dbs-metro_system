@@ -2,10 +2,6 @@ package init.web.servlet;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -14,9 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import init.service.InitException;
 import init.service.InitService;
-import user.domain.User;
-import user.service.UserException;
-import user.service.UserService;
+
 
 /**
  * Servlet implementation class UserServlet
