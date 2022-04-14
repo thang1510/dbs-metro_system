@@ -2,7 +2,7 @@
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CS480 Demo</display-name>
-    <servlet>
+  <servlet>
     <description></description>
     <display-name>Entity1ServletCreate</display-name>
     <servlet-name>Entity1ServletCreate</servlet-name>
@@ -92,6 +92,17 @@
   <servlet-mapping>
     <servlet-name>UserServletLogout</servlet-name>
     <url-pattern>/UserServletLogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>PassengerServletCreate</display-name>
+    <servlet-name>PassengerServletCreate</servlet-name>
+    <servlet-class>passenger.web.servlet.PassengerServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PassengerServletCreate</servlet-name>
+    <url-pattern>/PassengerServletCreate</url-pattern>
   </servlet-mapping>
   
   

@@ -22,18 +22,19 @@
   
   <body>
   <h1>Create Passenger</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	Passenger ID: <input type="text" name="passenger_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/PassengerServletCreate'/>" method="post">
+
+	Passenger ID: <input type="text" name="passenger_id" value="${form.passenger_id }"/>
+	<span style="color: red; font-weight: 900">${errors.passenger_id }</span>
 	<br/>
-	Full Name：<input type="password" name="fullname" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Full Name：<input type="text" name="fullname" value="${form.fullname }"/>
+	<span style="color: red; font-weight: 900">${errors.fullname }</span>
 	<br/>
-	Address：<input type="text" name="address" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Address：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
 	<br/>
-	Join date：<input type="text" name="join_date" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Join date：<input type="text" name="join_date" value="${form.join_date }"/>
+	<span style="color: red; font-weight: 900">${errors.join_date }</span>
 	<br/>
 	
 	<input type="submit" value="Create Passenger"/>
