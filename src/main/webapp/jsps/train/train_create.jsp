@@ -23,17 +23,17 @@
   <body>
   <h1>Create Train</h1>
 <form action="<c:url value='/TrainServletCreate'/>" method="post">
-	Train ID: <input type="text" name="train_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Train ID: <input type="text" name="train_id" value="${form.train_id }"/>
+	<span style="color: red; font-weight: 900">${errors.train_id }</span>
 	<br/>
-	Seat number: <input type="text" name="seat_number" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Seat number: <input type="text" name="seat_number" value="${form.seat_number }"/>
+	<span style="color: red; font-weight: 900">${errors.seat_number }</span>
 	<br/>
-	Train name: <input type="text" name="train_name" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Train name: <input type="text" name="train_name" value="${form.train_name }"/>
+	<span style="color: red; font-weight: 900">${errors.train_name }</span>
 	<br/>
-	Train status: <input type="text" name="train_status" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Train status: <input type="text" name="train_status" value="${form.train_status }"/>
+	<span style="color: red; font-weight: 900">${errors.train_status }</span>
 	<br/>
 	<input type="submit" value="Create Train"/>
 </form>
