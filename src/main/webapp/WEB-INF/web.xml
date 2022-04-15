@@ -107,6 +107,17 @@
   
   <servlet>
     <description></description>
+    <display-name>PaymentServletCreate</display-name>
+    <servlet-name>PaymentServletCreate</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletCreate</servlet-name>
+    <url-pattern>/PaymentServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>TrainServletCreate</display-name>
     <servlet-name>TrainServletCreate</servlet-name>
     <servlet-class>train.web.servlet.TrainServletCreate</servlet-class>

@@ -23,17 +23,17 @@
   <body>
   <h1>Create Payment</h1>
 	<form action="<c:url value='/PaymentServletCreate'/>" method="post">
-		Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
-		<span style="color: red; font-weight: 900">${errors.username }</span>
+		Payment ID: <input type="text" name="payment_id" value="${form.payment_id }"/>
+		<span style="color: red; font-weight: 900">${errors.payment_id }</span>
 		<br/>
-		Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
-		<span style="color: red; font-weight: 900">${errors.username }</span>
+		Reservation ID: <input type="text" name="reservation_id" value="${form.reservation_id }"/>
+		<span style="color: red; font-weight: 900">${errors.reservation_id }</span>
 		<br/>
-		Payment date: <input type="text" name="payment_date" value="${form.username }"/>
-		<span style="color: red; font-weight: 900">${errors.username }</span>
+		Payment date: <input type="text" name="payment_date" value="${form.payment_date }"/>
+		<span style="color: red; font-weight: 900">${errors.payment_date }</span>
 		<br/>
-		Amount: <input type="text" name="amount" value="${form.username }"/>
-		<span style="color: red; font-weight: 900">${errors.username }</span>
+		Amount: <input type="text" name="amount" value="${form.amount }"/>
+		<span style="color: red; font-weight: 900">${errors.amount }</span>
 		<br/>
 		<input type="submit" value="Create Payment"/>
 	</form>
