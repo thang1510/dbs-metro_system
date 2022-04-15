@@ -105,6 +105,17 @@
     <url-pattern>/PassengerServletCreate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>ReservationServletCreate</display-name>
+    <servlet-name>ReservationServletCreate</servlet-name>
+    <servlet-class>reservation.web.servlet.ReservationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReservationServletCreate</servlet-name>
+    <url-pattern>/ReservationServletCreate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

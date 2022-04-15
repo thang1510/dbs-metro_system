@@ -23,20 +23,20 @@
   <body>
   <h1>Create Reservation</h1>
 <form action="<c:url value='/ReservationServletCreate'/>" method="post">
-	Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Reservation ID: <input type="text" name="reservation_id" value="${form.reservation_id }"/>
+	<span style="color: red; font-weight: 900">${errors.reservation_id }</span>
 	<br/>
-	Passenger ID: <input type="text" name="passenger_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Passenger ID: <input type="text" name="passenger_id" value="${form.passenger_id }"/>
+	<span style="color: red; font-weight: 900">${errors.passenger_id }</span>
 	<br/>
-	Ticket ID: <input type="text" name="ticket_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Ticket ID: <input type="text" name="ticket_id" value="${form.ticket_id }"/>
+	<span style="color: red; font-weight: 900">${errors.ticket_id }</span>
 	<br/>
-	Reservation status: <input type="text" name="reservation_status" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Reservation status: <input type="text" name="reservation_status" value="${form.reservation_status }"/>
+	<span style="color: red; font-weight: 900">${errors.reservation_status }</span>
 	<br/>
-	Reservation date: <input type="text" name="reservation_date" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Reservation date: <input type="text" name="reservation_date" value="${form.reservation_date }"/>
+	<span style="color: red; font-weight: 900">${errors.reservation_date }</span>
 	<br/>
 	<input type="submit" value="Create Reservation"/>
 </form>
