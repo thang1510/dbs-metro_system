@@ -23,23 +23,23 @@
   <body>
   <h1>Create Ticket</h1>
 <form action="<c:url value='/TicketServletCreate'/>" method="post">
-	Ticket ID: <input type="text" name="ticket_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Ticket ID: <input type="text" name="ticket_id" value="${form.ticket_id }"/>
+	<span style="color: red; font-weight: 900">${errors.ticket_id }</span>
 	<br/>
-	Train ID: <input type="text" name="train_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Train ID: <input type="text" name="train_id" value="${form.train_id }"/>
+	<span style="color: red; font-weight: 900">${errors.train_id }</span>
 	<br/>
-	Station Depart：<input type="text" name="station_depart" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Station Depart：<input type="text" name="station_depart" value="${form.station_depart }"/>
+	<span style="color: red; font-weight: 900">${errors.station_depart }</span>
 	<br/>
-	Station Arrive：<input type="text" name="station_arrive" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Station Arrive：<input type="text" name="station_arrive" value="${form.station_arrive }"/>
+	<span style="color: red; font-weight: 900">${errors.station_arrive }</span>
 	<br/>
-	Time Depart：<input type="text" name="time_depart" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Time Depart：<input type="text" name="time_depart" value="${form.time_depart }"/>
+	<span style="color: red; font-weight: 900">${errors.time_depart }</span>
 	<br/>
-	Time Arrive：<input type="text" name="time_arrive" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Time Arrive：<input type="text" name="time_arrive" value="${form.time_arrive }"/>
+	<span style="color: red; font-weight: 900">${errors.time_arrive }</span>
 	<br/>
 	<input type="submit" value="Create Ticket"/>
 </form>
