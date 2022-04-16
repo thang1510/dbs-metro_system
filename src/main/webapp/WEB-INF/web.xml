@@ -151,6 +151,17 @@
   
   <servlet>
     <description></description>
+    <display-name>TrainServletRead</display-name>
+    <servlet-name>TrainServletRead</servlet-name>
+    <servlet-class>train.web.servlet.TrainServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainServletRead</servlet-name>
+    <url-pattern>/TrainServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>ReservationServletCreate</display-name>
     <servlet-name>ReservationServletCreate</servlet-name>
     <servlet-class>reservation.web.servlet.ReservationServletCreate</servlet-class>

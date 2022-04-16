@@ -25,15 +25,9 @@
 	<p style="color: red; font-weight: 900">${msg }</p>
 	<form action="<c:url value='/TrainServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-		Train ID: <input type="text" name="train_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Train ID: <input type="text" name="train_id" value="${form.train_id }"/>
+	<span style="color: red; font-weight: 900">${errors.train_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read Train"/>
 </form>
   </body>

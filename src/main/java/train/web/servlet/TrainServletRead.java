@@ -13,7 +13,7 @@ import train.domain.Train;
 
 
 /**
- * Servlet implementation class UserServlet
+ * Servlet implementation class TrainServlet
  */
 
 public class TrainServletRead extends HttpServlet {
@@ -37,12 +37,11 @@ public class TrainServletRead extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
-		PassengerDao entity1 = null;
-		PassengerDao entity1Dao = new PassengerDao();
+		Train train = null;
+		TrainDao trainDao = new TrainDao();
 		
 		try {
-			entity1 = entity1Dao.findByPassengerID(request.getParameter("username"));
+			train = trainDao.findByTrainID(Integer.parseInt(request.getParameter("train_id")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {
@@ -51,16 +50,14 @@ public class TrainServletRead extends HttpServlet {
 			e1.printStackTrace();
 		}
 		
-		if(entity1.getUsername()!=null){
-					System.out.println(entity1);
-					request.setAttribute("entity1", entity1);
-					request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+		if(train.getTrain_id() != null){
+					request.setAttribute("train", train);
+					request.getRequestDispatcher("/jsps/train/train_read_output.jsp").forward(request, response);
 			}
 			else{
-			request.setAttribute("msg", "Entity not found");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Train not found");
+			request.getRequestDispatcher("/jsps/train/train_read_output.jsp").forward(request, response);
 		}
-		*/
 	}
 }
 
