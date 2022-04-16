@@ -25,8 +25,8 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/PassengerServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-		Passenger ID: <input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Passenger ID: <input type="text" name="passenger_id" value="${form.passenger_id }"/>
+	<span style="color: red; font-weight: 900">${errors.passenger_id }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
