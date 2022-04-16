@@ -129,6 +129,17 @@
   
   <servlet>
     <description></description>
+    <display-name>PaymentServletRead</display-name>
+    <servlet-name>PaymentServletRead</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletRead</servlet-name>
+    <url-pattern>/PaymentServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>TrainServletCreate</display-name>
     <servlet-name>TrainServletCreate</servlet-name>
     <servlet-class>train.web.servlet.TrainServletCreate</servlet-class>

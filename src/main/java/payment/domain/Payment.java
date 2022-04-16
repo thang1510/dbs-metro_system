@@ -16,7 +16,7 @@ public class Payment {
 	
 	private Integer payment_id;
 	private Integer reservation_id;
-	private Timestamp datetime; 
+	private Timestamp payment_date; 
 	private BigDecimal amount;
 	/**
 	 * @return the payment_id
@@ -43,16 +43,16 @@ public class Payment {
 		this.reservation_id = reservation_id;
 	}
 	/**
-	 * @return the datetime
+	 * @return the payment_date
 	 */
-	public Timestamp getDatetime() {
-		return datetime;
+	public Timestamp getPayment_date() {
+		return payment_date;
 	}
 	/**
-	 * @param datetime the datetime to set
+	 * @param payment_date the payment_date to set
 	 */
-	public void setDatetime(Timestamp datetime) {
-		this.datetime = datetime;
+	public void setPayment_date(Timestamp payment_date) {
+		this.payment_date = payment_date;
 	}
 	/**
 	 * @return the amount
@@ -66,6 +66,8 @@ public class Payment {
 	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
+	
+	
 
 	
 }

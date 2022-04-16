@@ -40,7 +40,7 @@ public class PaymentDao {
 		    	if(payment_id == payment_id_p){
 		    		payment.setPayment_id(payment_id);
 		    		payment.setReservation_id(Integer.parseInt(resultSet.getString("reservation_id")));
-		    		payment.setDatetime(java.sql.Timestamp.valueOf(resultSet.getString("join_date")));
+		    		payment.setPayment_date(java.sql.Timestamp.valueOf(resultSet.getString("payment_date")));
 		    		payment.setAmount(BigDecimal.valueOf(Double.valueOf(resultSet.getString("amount"))));
 		    	}
 		    }
@@ -68,7 +68,7 @@ public class PaymentDao {
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getPayment_id());
 		    preparestatement.setInt(2,form.getReservation_id());
-		    preparestatement.setTimestamp(3,form.getDatetime());
+		    preparestatement.setTimestamp(3,form.getPayment_date());
 		    preparestatement.setBigDecimal(4,form.getAmount());
 		    preparestatement.executeUpdate();
 		    connect.close();

@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import passenger.dao.PassengerDao;
-import passenger.domain.Passenger;
+import payment.dao.PaymentDao;
+import payment.domain.Payment;
 
 
 /**
- * Servlet implementation class UserServlet
+ * Servlet implementation class PaymentServlet
  */
 
 public class PaymentServletRead extends HttpServlet {
@@ -37,12 +37,11 @@ public class PaymentServletRead extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
-		PassengerDao entity1 = null;
-		PassengerDao entity1Dao = new PassengerDao();
+		Payment payment = null;
+		PaymentDao paymentDao = new PaymentDao();
 		
 		try {
-			entity1 = entity1Dao.findByPassengerID(request.getParameter("username"));
+			payment = paymentDao.findByPaymentID(Integer.parseInt(request.getParameter("payment_id")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {
@@ -51,16 +50,14 @@ public class PaymentServletRead extends HttpServlet {
 			e1.printStackTrace();
 		}
 		
-		if(entity1.getUsername()!=null){
-					System.out.println(entity1);
-					request.setAttribute("entity1", entity1);
-					request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+		if(payment.getPayment_id() !=null){
+					request.setAttribute("payment", payment);
+					request.getRequestDispatcher("/jsps/payment/payment_read_output.jsp").forward(request, response);
 			}
 			else{
-			request.setAttribute("msg", "Entity not found");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Payment not found");
+			request.getRequestDispatcher("/jsps/payment/payment_read_output.jsp").forward(request, response);
 		}
-		*/
 	}
 }
 

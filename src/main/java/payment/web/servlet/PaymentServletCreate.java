@@ -52,7 +52,7 @@ public class PaymentServletCreate extends HttpServlet {
 		}
 		form.setPayment_id(Integer.parseInt(info.get(0)));
 		form.setReservation_id(Integer.parseInt(info.get(1)));
-		form.setDatetime(java.sql.Timestamp.valueOf(info.get(2)));
+		form.setPayment_date(java.sql.Timestamp.valueOf(info.get(2)));
 		form.setAmount(BigDecimal.valueOf(Double.valueOf(info.get(3))));
 
 		try {

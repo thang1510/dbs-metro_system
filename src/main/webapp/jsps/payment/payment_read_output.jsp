@@ -24,15 +24,16 @@
   <h1>Read Payment Output</h1>
 	<p style="color: red; font-weight: 900">${msg }</p>
 	<form>
-		Payment ID: <input type="text" name="payment_id" value="${payment.username }" disabled/>
+		Payment ID: <input type="text" name="payment_id" value="${payment.payment_id }" disabled/>
 		<br/>
-		Reservation ID: <input type="text" name="reservation_id" value="${payment.username }" disabled/>
+		Reservation ID: <input type="text" name="reservation_id" value="${payment.reservation_id }" disabled/>
 		<br/>
-		Payment date: <input type="text" name="payment_date" value="${payment.username }" disabled/>
+		Payment date: <input type="text" name="payment_date" value="${payment.payment_date }" disabled/>
 		<br/>
-		Amount: <input type="text" name="amount" value="${payment.username }" disabled/>
+		Amount: <input type="text" name="amount" value="${payment.amount }" disabled/>
 		<br/>
 	</form>
+		    	    
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
 </body>
 </html>

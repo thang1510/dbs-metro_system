@@ -25,15 +25,9 @@
 	<p style="color: red; font-weight: 900">${msg }</p>
 	<form action="<c:url value='/PaymentServletRead'/>" method="post">
 		<input type="hidden" name="method" value="regist"/>
-			Payment ID: <input type="text" name="payment_id" value="${form.username }"/>
-		<span style="color: red; font-weight: 900">${errors.username }</span>
+			Payment ID: <input type="text" name="payment_id" value="${form.payment_id }"/>
+		<span style="color: red; font-weight: 900">${errors.payment_id }</span>
 		<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read Payment"/>
 </form>
   </body>
