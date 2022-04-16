@@ -182,6 +182,17 @@
     <url-pattern>/TicketServletCreate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>TicketServletRead</display-name>
+    <servlet-name>TicketServletRead</servlet-name>
+    <servlet-class>ticket.web.servlet.TicketServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TicketServletRead</servlet-name>
+    <url-pattern>/TicketServletRead</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

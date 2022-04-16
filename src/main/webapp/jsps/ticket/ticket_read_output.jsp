@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Ticket Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,20 +21,20 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Ticket Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Ticket ID: <input type="text" name="ticket_id" value="${Ticket.username }" disabled/>
+	Ticket ID: <input type="text" name="ticket_id" value="${ticket.ticket_id }" disabled/>
 	<br/>
-	Train ID: <input type="text" name="train_id" value="${Ticket.username }" disabled/>
+	Train ID: <input type="text" name="train_id" value="${ticket.train_id }" disabled/>
 	<br/>	
-	Station Depart：<input type="text" name="station_depart" value="${Ticket.password }" disabled/>
+	Station Depart：<input type="text" name="station_depart" value="${ticket.station_depart }" disabled/>
 	<br/>
-	Station Depart：<input type="text" name="station_arrive" value="${Ticket.password }" disabled/>
+	Station Arrive：<input type="text" name="station_arrive" value="${ticket.station_arrive }" disabled/>
 	<br/>
-	Time Depart：<input type="text" name="time_depart" value="${Ticket.password }" disabled/>
+	Time Depart：<input type="text" name="time_depart" value="${ticket.time_depart }" disabled/>
 	<br/>
-	Time Arrive：<input type="text" name="time_depart" value="${Ticket.password }" disabled/>
+	Time Arrive：<input type="text" name="time_arrive" value="${ticket.time_arrive }" disabled/>
 	<br/>
 </form>
 
