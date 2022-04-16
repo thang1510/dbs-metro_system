@@ -23,17 +23,11 @@
   <body>
   <h1>Read Reservation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/ReservationServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-		Reservation ID: <input type="text" name="reservation_id" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Reservation ID: <input type="text" name="reservation_id" value="${form.reservation_id }"/>
+	<span style="color: red; font-weight: 900">${errors.reservation_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read Reservation"/>
 </form>
   </body>

@@ -28,12 +28,6 @@
 		Passenger ID: <input type="text" name="passenger_id" value="${form.passenger_id }"/>
 	<span style="color: red; font-weight: 900">${errors.passenger_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read Passenger"/>
 </form>
   </body>
