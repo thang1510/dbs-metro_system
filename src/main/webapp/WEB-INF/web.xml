@@ -118,6 +118,18 @@
   
   <servlet>
     <description></description>
+    <display-name>PassengerServletDelete</display-name>
+    <servlet-name>PassengerServletDelete</servlet-name>
+    <servlet-class>passenger.web.servlet.PassengerServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PassengerServletDelete</servlet-name>
+    <url-pattern>/PassengerServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
     <display-name>PaymentServletCreate</display-name>
     <servlet-name>PaymentServletCreate</servlet-name>
     <servlet-class>payment.web.servlet.PaymentServletCreate</servlet-class>
@@ -126,6 +138,7 @@
     <servlet-name>PaymentServletCreate</servlet-name>
     <url-pattern>/PaymentServletCreate</url-pattern>
   </servlet-mapping>
+  
   
   <servlet>
     <description></description>

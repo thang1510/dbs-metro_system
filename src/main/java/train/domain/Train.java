@@ -1,6 +1,5 @@
 package train.domain;
 
-import java.sql.Timestamp;
 
 /**
  * Train object

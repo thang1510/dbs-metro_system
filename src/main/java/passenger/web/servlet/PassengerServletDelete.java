@@ -11,7 +11,7 @@ import passenger.domain.Passenger;
 
 
 /**
- * Servlet implementation class UserServlet
+ * Servlet implementation class PassengerServlet
  */
 
 public class PassengerServletDelete extends HttpServlet {
@@ -35,14 +35,13 @@ public class PassengerServletDelete extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
 		String method = request.getParameter("method");
-		PassengerDao entity1Dao = new PassengerDao();
-		PassengerDao entity1 = null;
+		PassengerDao passengerDao = new PassengerDao();
+		Passenger passenger = null;
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByPassengerID(request.getParameter("username"));
+				passenger = passengerDao.findByPassengerID(Integer.parseInt(request.getParameter("passenger_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -51,20 +50,19 @@ public class PassengerServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(entity1.getUsername()!=null){
-						System.out.println(entity1);
-						request.setAttribute("entity1", entity1);
-						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
+			if(passenger.getPassenger_id() !=null){
+						request.setAttribute("passenger", passenger);
+						request.getRequestDispatcher("/jsps/passenger/passenger_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "Passenger not found");
+				request.getRequestDispatcher("/jsps/passenger/passenger_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("username"));
+				passengerDao.delete(request.getParameter("passenger_id"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -72,10 +70,9 @@ public class PassengerServletDelete extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Passenger Deleted");
+			request.getRequestDispatcher("/jsps/passenger/passenger_read_output.jsp").forward(request, response);
 		}
-		*/
 	}
 }
 

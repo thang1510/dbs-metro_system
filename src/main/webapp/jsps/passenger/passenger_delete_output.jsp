@@ -23,17 +23,20 @@
   <body>
   <h1>Delete Passenger</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/PassengerServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	<input type="hidden" name="passenger_id" value="${passenger.passenger_id }"/>
+		
+	Passenger ID: <input type="text" name="passenger_id" value="${passenger.passenger_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Full Name：<input type="text" name="fullname" value="${passenger.fullname }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Address：<input type="text" name="address" value="${passenger.address }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Join date：<input type="text" name="join_date" value="${passenger.join_date }" disabled/>
+	<br/>
+
+	<input type="submit" value="Delete Passenger"/>
 </form>
 
 </body>
