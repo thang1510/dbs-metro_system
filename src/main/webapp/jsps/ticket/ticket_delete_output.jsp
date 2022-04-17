@@ -25,18 +25,19 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/TicketServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${Ticket.username }"/>
-	Ticket ID: <input type="text" name="ticket_id" value="${Ticket.username }" disabled/>
+	<input type="hidden" name= "ticket_id" value="${ticket.ticket_id }"/>
+	
+	Ticket ID: <input type="text" name="ticket_id" value="${ticket.ticket_id }" disabled/>
 	<br/>
-	Train ID: <input type="text" name="train_id" value="${Ticket.username }" disabled/>
+	Train ID: <input type="text" name="train_id" value="${ticket.train_id }" disabled/>
 	<br/>	
-	Station Depart：<input type="text" name="station_depart" value="${Ticket.password }" disabled/>
+	Station Depart：<input type="text" name="station_depart" value="${ticket.station_depart }" disabled/>
 	<br/>
-	Station Depart：<input type="text" name="station_arrive" value="${Ticket.password }" disabled/>
+	Station Arrive：<input type="text" name="station_arrive" value="${ticket.station_arrive }" disabled/>
 	<br/>
-	Time Depart：<input type="text" name="time_depart" value="${Ticket.password }" disabled/>
+	Time Depart：<input type="text" name="time_depart" value="${ticket.time_depart }" disabled/>
 	<br/>
-	Time Arrive：<input type="text" name="time_depart" value="${Ticket.password }" disabled/>
+	Time Arrive：<input type="text" name="time_arrive" value="${ticket.time_arrive }" disabled/>
 	<br/>
 	
 	<input type="submit" value="Delete Ticket"/>

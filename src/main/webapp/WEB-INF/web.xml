@@ -23,10 +23,8 @@
     <servlet-name>Entity1ServletRead</servlet-name>
     <url-pattern>/Entity1ServletRead</url-pattern>
   </servlet-mapping>
-  
-  
-  
-    <servlet>
+
+  <servlet>
     <description></description>
     <display-name>Entity1ServletUpdate</display-name>
     <servlet-name>Entity1ServletUpdate</servlet-name>
@@ -237,6 +235,17 @@
   <servlet-mapping>
     <servlet-name>TicketServletRead</servlet-name>
     <url-pattern>/TicketServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>TicketServletDelete</display-name>
+    <servlet-name>TicketServletDelete</servlet-name>
+    <servlet-class>ticket.web.servlet.TicketServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TicketServletDelete</servlet-name>
+    <url-pattern>/TicketServletDelete</url-pattern>
   </servlet-mapping>
   
   

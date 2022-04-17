@@ -24,7 +24,7 @@
   <h1>Delete Ticket</h1>
 <form action="<c:url value='/TicketServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-		Ticket ID: <input type="text" name="username" value="${form.username }"/>
+		Ticket ID: <input type="text" name="ticket_id" value="${form.ticket_id }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Delete Ticket"/>

@@ -6,12 +6,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import passenger.dao.PassengerDao;
-import passenger.domain.Passenger;
+import ticket.dao.TicketDao;
+import ticket.domain.Ticket;
 
 
 /**
- * Servlet implementation class UserServlet
+ * Servlet implementation class TicketServlet
  */
 
 public class TicketServletDelete extends HttpServlet {
@@ -35,14 +35,13 @@ public class TicketServletDelete extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
 		String method = request.getParameter("method");
-		PassengerDao entity1Dao = new PassengerDao();
-		PassengerDao entity1 = null;
+		TicketDao ticketDao = new TicketDao();
+		Ticket ticket = null;
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByPassengerID(request.getParameter("username"));
+				ticket = ticketDao.findByTicketID(Integer.parseInt(request.getParameter("ticket_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -51,20 +50,20 @@ public class TicketServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(entity1.getUsername()!=null){
-						System.out.println(entity1);
-						request.setAttribute("entity1", entity1);
-						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
+			if(ticket.getTicket_id() !=null){
+						System.out.println(ticket);
+						request.setAttribute("ticket", ticket);
+						request.getRequestDispatcher("/jsps/ticket/ticket_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "Ticket not found");
+				request.getRequestDispatcher("/jsps/ticket/ticket_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("username"));
+				ticketDao.delete(request.getParameter("ticket_id"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -72,10 +71,9 @@ public class TicketServletDelete extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Ticket Deleted");
+			request.getRequestDispatcher("/jsps/ticket/ticket_read_output.jsp").forward(request, response);
 		}
-		*/
 	}
 }
 
