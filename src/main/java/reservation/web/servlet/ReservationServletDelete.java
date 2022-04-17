@@ -35,14 +35,13 @@ public class ReservationServletDelete extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
 		String method = request.getParameter("method");
-		PassengerDao entity1Dao = new PassengerDao();
-		PassengerDao entity1 = null;
+		ReservationDao reservationDao = new ReservationDao();
+		Reservation reservation = null;
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByPassengerID(request.getParameter("username"));
+				reservation = reservationDao.findByReservationID(Integer.parseInt(request.getParameter("reservation_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -51,20 +50,19 @@ public class ReservationServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(entity1.getUsername()!=null){
-						System.out.println(entity1);
-						request.setAttribute("entity1", entity1);
-						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
+			if(reservation.getReservation_id() !=null){
+						request.setAttribute("reservation", reservation);
+						request.getRequestDispatcher("/jsps/reservation/reservation_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "Reservation not found");
+				request.getRequestDispatcher("/jsps/reservation/reservation_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("username"));
+				reservationDao.delete(request.getParameter("reservation_id"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -72,10 +70,9 @@ public class ReservationServletDelete extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Reservation Deleted");
+			request.getRequestDispatcher("/jsps/reservation/reservation_read_output.jsp").forward(request, response);
 		}
-		*/
 	}
 }
 

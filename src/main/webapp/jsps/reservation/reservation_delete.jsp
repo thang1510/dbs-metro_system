@@ -24,8 +24,8 @@
   <h1>Delete Reservation</h1>
 <form action="<c:url value='/ReservationServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-		Reservation ID: <input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Reservation ID: <input type="text" name="reservation_id" value="${form.reservation_id }"/>
+	<span style="color: red; font-weight: 900">${errors.reservation_id }</span>
 	<br/>
 	<input type="submit" value="Delete Reservation"/>
 </form>

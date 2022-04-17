@@ -25,17 +25,19 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/ReservationServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${reservation.username }"/>
-	Reservation ID: <input type="text" name="reservation_id" value="${reservation.username }" disabled/>
+	<input type="hidden" name="reservation_id" value="${reservation.reservation_id }"/>
+		
+	Reservation ID: <input type="text" name="reservation_id" value="${reservation.reservation_id }" disabled/>
 	<br/>
-	Passenger ID: <input type="text" name="passenger_id" value="${reservation.username }" disabled/>
+	Passenger ID: <input type="text" name="passenger_id" value="${reservation.passenger_id }" disabled/>
 	<br/>
-	Ticket ID: <input type="text" name="ticket_id" value="${reservation.username }" disabled/>
+	Ticket ID: <input type="text" name="ticket_id" value="${reservation.ticket_id }" disabled/>
 	<br/>
-	Reservation status: <input type="text" name="reservation_status" value="${reservation.username }" disabled/>
+	Reservation status: <input type="text" name="reservation_status" value="${reservation.reservation_status }" disabled/>
 	<br/>
-	Reservation date: <input type="text" name="reservation_date" value="${reservation.username }" disabled/>
+	Reservation date: <input type="text" name="reservation_date" value="${reservation.reservation_date }" disabled/>
 	<br/>
+	
 	<input type="submit" value="Delete Reservation"/>
 </form>
 
