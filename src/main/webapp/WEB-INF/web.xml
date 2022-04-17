@@ -153,6 +153,17 @@
   
   <servlet>
     <description></description>
+    <display-name>PaymentServletDelete</display-name>
+    <servlet-name>PaymentServletDelete</servlet-name>
+    <servlet-class>payment.web.servlet.PaymentServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentServletDelete</servlet-name>
+    <url-pattern>/PaymentServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>TrainServletCreate</display-name>
     <servlet-name>TrainServletCreate</servlet-name>
     <servlet-class>train.web.servlet.TrainServletCreate</servlet-class>

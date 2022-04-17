@@ -23,16 +23,20 @@
   <body>
   <h1>Delete Payment</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/PaymentServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-		Payment ID: <input type="text" name="payment_id" value="${payment.username }" disabled/>
-		<br/>
-		Reservation ID: <input type="text" name="reservation_id" value="${payment.username }" disabled/>
-		<br/>
-		Payment date: <input type="text" name="payment_date" value="${payment.username }" disabled/>
-		<br/>
-		Amount: <input type="text" name="amount" value="${payment.username }" disabled/>
+	<input type="hidden" name="payment_id" value="${payment.payment_id }"/>
+	
+	Payment ID: <input type="text" name="payment_id" value="${payment.payment_id }" disabled/>
+	<br/>
+	Reservation ID: <input type="text" name="reservation_id" value="${payment.reservation_id }" disabled/>
+	<br/>
+	Payment date: <input type="text" name="payment_date" value="${payment.payment_date }" disabled/>
+	<br/>
+	Amount: <input type="text" name="amount" value="${payment.amount }" disabled/>
+	<br/>
+		
+		
 	<br/>
 	<input type="submit" value="Delete Payment"/>
 </form>

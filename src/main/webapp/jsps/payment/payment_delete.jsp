@@ -24,8 +24,8 @@
   <h1>Delete Payment</h1>
 	<form action="<c:url value='/PaymentServletDelete'/>" method="post">
 		<input type="hidden" name="method" value="search"/>
-			Payment ID: <input type="text" name="username" value="${form.username }"/>
-		<span style="color: red; font-weight: 900">${errors.username }</span>
+			Payment ID: <input type="text" name="payment_id" value="${form.payment_id }"/>
+		<span style="color: red; font-weight: 900">${errors.payment_id }</span>
 		<br/>
 		<input type="submit" value="Delete Payment"/>
 	</form>
