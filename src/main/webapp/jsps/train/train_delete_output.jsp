@@ -25,15 +25,17 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/TrainServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${Train.username }"/>
-			Train ID: <input type="text" name="train_id" value="${Train.username }" disabled/>
-		<br/>
-			Seat number: <input type="text" name="seat_number" value="${Train.username }" disabled/>
-		<br/>
-			Train name: <input type="text" name="train_name" value="${Train.username }" disabled/>
-		<br/>
-			Train status: <input type="text" name="train_status" value="${Train.username }" disabled/>
-		<br/>
+	<input type="hidden" name="train_id" value="${train.train_id }"/>
+	
+	Train ID: <input type="text" name="train_id" value="${train.train_id }" disabled/>
+	<br/>
+	Seat number: <input type="text" name="seat_number" value="${train.seat_number }" disabled/>
+	<br/>
+	Train name: <input type="text" name="train_name" value="${train.train_name }" disabled/>
+	<br/>
+	Train status: <input type="text" name="train_status" value="${train.train_status }" disabled/>
+	<br/>
+	
 	<input type="submit" value="Delete Train"/>
 </form>
 

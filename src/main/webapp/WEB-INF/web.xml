@@ -184,6 +184,17 @@
   
   <servlet>
     <description></description>
+    <display-name>TrainServletDelete</display-name>
+    <servlet-name>TrainServletDelete</servlet-name>
+    <servlet-class>train.web.servlet.TrainServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainServletDelete</servlet-name>
+    <url-pattern>/TrainServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>ReservationServletCreate</display-name>
     <servlet-name>ReservationServletCreate</servlet-name>
     <servlet-class>reservation.web.servlet.ReservationServletCreate</servlet-class>
