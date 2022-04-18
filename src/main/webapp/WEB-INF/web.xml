@@ -239,6 +239,17 @@
   
   <servlet>
     <description></description>
+    <display-name>ReservationServletUpdate</display-name>
+    <servlet-name>ReservationServletUpdate</servlet-name>
+    <servlet-class>reservation.web.servlet.ReservationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReservationServletUpdate</servlet-name>
+    <url-pattern>/ReservationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>TicketServletCreate</display-name>
     <servlet-name>TicketServletCreate</servlet-name>
     <servlet-class>ticket.web.servlet.TicketServletCreate</servlet-class>

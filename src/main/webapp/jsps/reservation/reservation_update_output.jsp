@@ -24,27 +24,32 @@
   <h1>Update Reservation</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Reservation ID: <input type="text" name="reservation_id" value="${reservation.username }" disabled/>
+	Reservation ID: <input type="text" name="reservation_id" value="${reservation.reservation_id }" disabled/>
 	<br/>
-	Passenger ID: <input type="text" name="passenger_id" value="${reservation.username }" disabled/>
+	Passenger ID: <input type="text" name="passenger_id" value="${reservation.passenger_id }" disabled/>
 	<br/>
-	Ticket ID: <input type="text" name="ticket_id" value="${reservation.username }" disabled/>
+	Ticket ID: <input type="text" name="ticket_id" value="${reservation.ticket_id }" disabled/>
 	<br/>
-	Reservation status: <input type="text" name="reservation_status" value="${reservation.username }" disabled/>
+	Reservation status: <input type="text" name="reservation_status" value="${reservation.reservation_status }" disabled/>
 	<br/>
-	Reservation date: <input type="text" name="reservation_date" value="${reservation.username }" disabled/>
+	Reservation date: <input type="text" name="reservation_date" value="${reservation.reservation_date }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
 <form action="<c:url value='/ReservationServletUpdate'/>" method="post">
-		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	<input type="hidden" name="method" value="update"/>
+	<input type="hidden" name="reservation_id" value="${reservation.reservation_id }"/>
+	
+	Passenger ID: <input type="text" name="passenger_id" value="${form.passenger_id }" />
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Ticket ID: <input type="text" name="ticket_id" value="${form.ticket_id }" />
 	<br/>
+	Reservation status: <input type="text" name="reservation_status" value="${form.reservation_status }" />
+	<br/>
+	Reservation date: <input type="text" name="reservation_date" value="${form.reservation_date }" />
+	<br/>
+	
 	<input type="submit" value="Update Reservation"/>
 </form>
 
