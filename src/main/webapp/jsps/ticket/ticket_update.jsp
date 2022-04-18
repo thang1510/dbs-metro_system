@@ -24,8 +24,8 @@
   <h1>Update Ticket</h1>
 <form action="<c:url value='/TicketServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-		Ticket ID: <input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Ticket ID: <input type="text" name="ticket_id" value="${form.ticket_id }"/>
+	<span style="color: red; font-weight: 900">${errors.ticket_id }</span>
 	<br/>
 	<input type="submit" value="Update Ticket"/>
 </form>

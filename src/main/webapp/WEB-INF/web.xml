@@ -292,6 +292,17 @@
     <url-pattern>/TicketServletDelete</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>TicketServletUpdate</display-name>
+    <servlet-name>TicketServletUpdate</servlet-name>
+    <servlet-class>ticket.web.servlet.TicketServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TicketServletUpdate</servlet-name>
+    <url-pattern>/TicketServletUpdate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

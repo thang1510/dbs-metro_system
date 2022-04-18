@@ -87,24 +87,25 @@ public class TicketDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
-	public void update(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Ticket form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
-			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+			String sql = "UPDATE ticket SET train_id = ?, station_depart = ?, station_arrive = ?, time_depart = ?, time_arrive = ?  where ticket_id = ?;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql);
+		    preparestatement.setInt(1,form.getTrain_id());
+		    preparestatement.setString(2,form.getStation_depart());
+		    preparestatement.setString(3,form.getStation_arrive());
+		    preparestatement.setTimestamp(4,form.getTime_depart());
+		    preparestatement.setTimestamp(5,form.getTime_arrive());
+		    preparestatement.setInt(6,form.getTicket_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
 	}
-	*/
 	
 	/**
 	 * @param username

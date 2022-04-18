@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Ticket</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,33 +21,39 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Ticket</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Ticket ID: <input type="text" name="ticket_id" value="${Ticket.username }" disabled/>
+	Ticket ID: <input type="text" name="ticket_id" value="${ticket.ticket_id }" disabled/>
 	<br/>
-	Train ID: <input type="text" name="train_id" value="${Ticket.username }" disabled/>
+	Train ID: <input type="text" name="train_id" value="${ticket.train_id }" disabled/>
 	<br/>	
-	Station Depart：<input type="text" name="station_depart" value="${Ticket.password }" disabled/>
+	Station Depart：<input type="text" name="station_depart" value="${ticket.station_depart }" disabled/>
 	<br/>
-	Station Depart：<input type="text" name="station_arrive" value="${Ticket.password }" disabled/>
+	Station Arrive：<input type="text" name="station_arrive" value="${ticket.station_arrive }" disabled/>
 	<br/>
-	Time Depart：<input type="text" name="time_depart" value="${Ticket.password }" disabled/>
+	Time Depart：<input type="text" name="time_depart" value="${ticket.time_depart }" disabled/>
 	<br/>
-	Time Arrive：<input type="text" name="time_depart" value="${Ticket.password }" disabled/>
+	Time Arrive：<input type="text" name="time_arrive" value="${ticket.time_arrive }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+<form action="<c:url value='/TicketServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="update"/>
+	<input type="hidden" name="ticket_id" value="${ticket.ticket_id }"/>
+	
+	Train ID: <input type="text" name="train_id" value="${form.train_id }" />
+	<br/>	
+	Station Depart：<input type="text" name="station_depart" value="${form.station_depart }" />
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Station Arrive：<input type="text" name="station_arrive" value="${form.station_arrive }" />
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Time Depart：<input type="text" name="time_depart" value="${form.time_depart }" />
+	<br/>
+	Time Arrive：<input type="text" name="time_arrive" value="${form.time_arrive }" />
+	<br/>
+	<input type="submit" value="Update Ticket"/>
 </form>
 
 </body>

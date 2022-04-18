@@ -49,6 +49,7 @@ public class TicketServletCreate extends HttpServlet {
 			String[] values = paramMap.get(name);
 			info.add(values[0]);
 		}
+		
 		form.setTicket_id(Integer.parseInt(info.get(0)));
 		form.setTrain_id(Integer.parseInt(info.get(1)));
 		form.setStation_depart(info.get(2));
@@ -56,7 +57,6 @@ public class TicketServletCreate extends HttpServlet {
 		form.setTime_depart(java.sql.Timestamp.valueOf(info.get(4)));
 		form.setTime_arrive(java.sql.Timestamp.valueOf(info.get(5)));
 
-		
 		try {
 			entity1service.create(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
