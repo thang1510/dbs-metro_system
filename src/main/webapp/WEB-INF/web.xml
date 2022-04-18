@@ -125,6 +125,17 @@
     <url-pattern>/PassengerServletDelete</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>PassengerServletUpdate</display-name>
+    <servlet-name>PassengerServletUpdate</servlet-name>
+    <servlet-class>passenger.web.servlet.PassengerServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PassengerServletUpdate</servlet-name>
+    <url-pattern>/PassengerServletUpdate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

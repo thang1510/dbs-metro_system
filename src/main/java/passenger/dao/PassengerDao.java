@@ -89,24 +89,23 @@ public class PassengerDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
-	public void update(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Passenger form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+			String sql = "UPDATE passenger SET fullname = ?, address = ?, join_date = ? where passenger_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+		    preparestatement.setString(1,form.getFullname());
+		    preparestatement.setString(2,form.getAddress());
+		    preparestatement.setTimestamp(3,form.getJoin_date());
+		    preparestatement.setInt(4,form.getPassenger_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
 	}
-	*/
 	
 	/**
 	 * @param username
