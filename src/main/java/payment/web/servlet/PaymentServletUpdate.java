@@ -1,18 +1,21 @@
 package payment.web.servlet;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import passenger.dao.PassengerDao;
-import passenger.domain.Passenger;
+import payment.dao.PaymentDao;
+import payment.domain.Payment;
 
 /**
- * Servlet implementation class UserServlet
+ * Servlet implementation class PaymentServlet
  */
 
 public class PaymentServletUpdate extends HttpServlet {
@@ -36,15 +39,14 @@ public class PaymentServletUpdate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*
 		String method = request.getParameter("method");
-		PassengerDao entity1dao = new PassengerDao();
-		PassengerDao entity1 = null;
+		PaymentDao paymentDao = new PaymentDao();
+		Payment payment = null;
 
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1dao.findByPassengerID(request.getParameter("username"));
+				payment = paymentDao.findByPaymentID(Integer.parseInt(request.getParameter("payment_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -53,32 +55,35 @@ public class PaymentServletUpdate extends HttpServlet {
 				e1.printStackTrace();
 			}
 
-			if(entity1.getUsername()!=null){
-				request.setAttribute("entity1", entity1);
-				request.getRequestDispatcher("/jsps/entity1/entity1_update_output.jsp").forward(request, response);
+			if(payment.getPayment_id() != null){
+				request.setAttribute("payment", payment);
+				request.getRequestDispatcher("/jsps/payment/payment_update_output.jsp").forward(request, response);
 
 			}
 			else{
-				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.setAttribute("msg", "Payment not found");
+				request.getRequestDispatcher("/jsps/payment/payment_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("update"))
 		{
 			Map<String,String[]> paramMap = request.getParameterMap();
-			PassengerDao form = new PassengerDao();
+			Payment form = new Payment();
 			List<String> info = new ArrayList<String>();
 
 			for(String name : paramMap.keySet()) {
 				String[] values = paramMap.get(name);
 				info.add(values[0]);
 			}
-			form.setPassword(info.get(2));
-			form.setEmail(info.get(3));
-			form.setUsername(request.getParameter("username"));
-
+			
+			form.setPayment_id(Integer.parseInt(info.get(1)));
+			form.setReservation_id(Integer.parseInt(info.get(2)));
+			form.setPayment_date(java.sql.Timestamp.valueOf(info.get(3)));
+			form.setAmount(BigDecimal.valueOf(Double.valueOf(info.get(4))));
+			
+			
 			try {
-				entity1dao.update(form);
+				paymentDao.update(form);
 
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
@@ -87,10 +92,9 @@ public class PaymentServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Updated");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Payment Updated");
+			request.getRequestDispatcher("/jsps/payment/payment_read_output.jsp").forward(request, response);
 		}
-		*/
 	}
 }
 
