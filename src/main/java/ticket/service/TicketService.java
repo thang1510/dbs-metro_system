@@ -1,6 +1,8 @@
 package ticket.service;
 
 
+import java.util.List;
+
 import ticket.dao.TicketDao;
 import ticket.domain.Ticket;
 
@@ -26,5 +28,10 @@ public class TicketService {
 		Ticket entity1 = ticketDao.findByTicketID(form.getTicket_id());
 		if(entity1.getTicket_id() !=null && entity1.getTicket_id() == form.getTicket_id()) throw new TicketException("This ticket id has been registered before!");
 		ticketDao.add(form);
+	}
+	
+	public List<Object> findTicket() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return ticketDao.findTicket();
+		
 	}
 }

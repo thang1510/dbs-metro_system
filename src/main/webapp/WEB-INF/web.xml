@@ -319,13 +319,24 @@
     <description></description>
     <display-name>findAll</display-name>
     <servlet-name>findAll</servlet-name>
-    
     <servlet-class>user.web.servlet.findAll</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findTicket</display-name>
+    <servlet-name>findTicket</servlet-name>
+    <servlet-class>ticket.web.servlet.findTicket</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTicket</servlet-name>
+    <url-pattern>/findTicket</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

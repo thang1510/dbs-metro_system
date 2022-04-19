@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h3 align="center"> Ticket </h3>
-	<table border="1" width="70%" align="center">
+	<table border="1" width="100%" align="center">
 	<tr>
 		<th>Ticket ID</th>
 		<th>Train ID</th>
@@ -20,12 +20,12 @@
 	</tr>
 <c:forEach items="${TicketList}" var="ticket">
 	<tr>
-		<td>${book.ticket_id}</td>
-		<td>${book.train_id}</td>
-		<td>${book.station_depart}</td>
-		<td>${book.station_arrive}</td>
-		<td>${book.time_depart}</td>
-		<td>${book.time_arrive}</td>
+		<td>${ticket.ticket_id}</td>
+		<td>${ticket.train_id}</td>
+		<td>${ticket.station_depart}</td>
+		<td>${ticket.station_arrive}</td>
+		<td>${ticket.time_depart}</td>
+		<td>${ticket.time_arrive}</td>
 	</tr>
 </c:forEach>
 </table>
