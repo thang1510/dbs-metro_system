@@ -24,8 +24,8 @@
   <h1>Update Train</h1>
 	<form action="<c:url value='/TrainServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-		Train ID: <input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+		Train ID: <input type="text" name="train_id" value="${form.train_id }"/>
+	<span style="color: red; font-weight: 900">${errors.train_id }</span>
 	<br/>
 	<input type="submit" value="Update Train"/>
 </form>

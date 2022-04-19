@@ -24,27 +24,30 @@
   <h1>Update Train</h1>
 	<p style="color: red; font-weight: 900">${msg }</p>
 	<form>
-		Train ID: <input type="text" name="train_id" value="${Train.username }" disabled/>
-		<br/>
-		Seat number: <input type="text" name="seat_number" value="${Train.username }" disabled/>
-		<br/>
-		Train name: <input type="text" name="train_name" value="${Train.username }" disabled/>
-		<br/>
-		Train status: <input type="text" name="train_status" value="${Train.username }" disabled/>
-		<br/>
+	Train ID: <input type="text" name="train_id" value="${train.train_id }" disabled/>
+	<br/>
+	Seat number: <input type="text" name="seat_number" value="${train.seat_number }" disabled/>
+	<br/>
+	Train name: <input type="text" name="train_name" value="${train.train_name }" disabled/>
+	<br/>
+	Train status: <input type="text" name="train_status" value="${train.train_status }" disabled/>
+	<br/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+<form action="<c:url value='/TrainServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="update"/>
+	<input type="hidden" name="train_id" value="${train.train_id }"/>
+	
+	Seat number: <input type="text" name="seat_number" value="${form.seat_number }" />
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Train name: <input type="text" name="train_name" value="${form.train_name }" />
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Train status: <input type="text" name="train_status" value="${form.train_status }" />
+	<br/>
+	
+	<input type="submit" value="Update Train"/>
 </form>
 
 </body>

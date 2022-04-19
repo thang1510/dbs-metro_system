@@ -82,24 +82,23 @@ public class TrainDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	/*
-	public void update(Entity1 form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void update(Train form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+			String sql = "UPDATE train SET seat_number = ?, train_name = ?, train_status = ? where train_id = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getPassword());
-			preparestatement.setString(2,form.getEmail());
-		    preparestatement.setString(3,form.getUsername());
+		    preparestatement.setInt(1,form.getSeat_number());
+		    preparestatement.setString(2,form.getTrain_name());
+		    preparestatement.setBoolean(3,form.getTrain_status());
+		    preparestatement.setInt(4,form.getTrain_id());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
 	}
-	*/
 	
 	/**
 	 * @param username

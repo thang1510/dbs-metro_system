@@ -217,6 +217,17 @@
   
   <servlet>
     <description></description>
+    <display-name>TrainServletUpdate</display-name>
+    <servlet-name>TrainServletUpdate</servlet-name>
+    <servlet-class>train.web.servlet.TrainServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrainServletUpdate</servlet-name>
+    <url-pattern>/TrainServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>ReservationServletCreate</display-name>
     <servlet-name>ReservationServletCreate</servlet-name>
     <servlet-class>reservation.web.servlet.ReservationServletCreate</servlet-class>
