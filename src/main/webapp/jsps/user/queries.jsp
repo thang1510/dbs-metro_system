@@ -22,10 +22,11 @@
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
+    <h1>List of Queries</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 
+ 	<br />
+ 	<a href="<c:url value='/findAll'/>" target="body">Please list all ticket having Time Depart >= '2022-01-03 13:23:00', and Time Arrive <= '2022-01-05 19:00:00' </a>&nbsp;&nbsp;
     
   </body>
 </html>
