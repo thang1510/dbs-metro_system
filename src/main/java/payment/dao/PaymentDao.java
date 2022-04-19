@@ -6,9 +6,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+import java.util.ArrayList;
+import java.util.List;
 
 import payment.domain.Payment;
+import payment.domain.findPayment;
 
 /**
  * DDL functions performed in database
@@ -123,5 +125,31 @@ public class PaymentDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	public List<Object> findPayment() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
+			String sql = "select * from payment_aggregate";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				findPayment payment = new findPayment();
+				
+				payment.setPayment_id(Integer.parseInt(resultSet.getString("payment_id")));
+	    		payment.setReservation_id(Integer.parseInt(resultSet.getString("reservation_id")));
+	    		payment.setPayment_date(java.sql.Timestamp.valueOf(resultSet.getString("payment_date")));
+	    		payment.setAmount(BigDecimal.valueOf(Double.valueOf(resultSet.getString("amount"))));	
+	    		list.add(payment);
+	    		
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 }

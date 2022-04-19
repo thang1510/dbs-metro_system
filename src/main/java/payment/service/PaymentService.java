@@ -1,13 +1,15 @@
 package payment.service;
 
 
+import java.util.List;
+
 import payment.dao.PaymentDao;
 import payment.domain.Payment;
 
 
 /**
  * logic functions such as register, login
- * @author Huu Thuan Thang Nguyen
+ * @author Huu Thuan Thang Nguyen & Duc Than Nguyen 
  *
  */
 public class PaymentService {
@@ -26,5 +28,10 @@ public class PaymentService {
 		Payment entity1 = paymentDao.findByPaymentID(form.getPayment_id());
 		if(entity1.getPayment_id() !=null && entity1.getPayment_id() == form.getPayment_id()) throw new PaymentException("This payment id has been registered before!");
 		paymentDao.add(form);
+	}
+	
+	public List<Object> findPayment() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return paymentDao.findPayment();
+		
 	}
 }
