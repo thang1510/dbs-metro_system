@@ -15,11 +15,11 @@
 		<th>Reservation ID</th>
 		<th>Ticket ID</th>
 	</tr>
-<c:forEach items="${PaymentReservationList}" var="payment_reservation">
+<c:forEach items="${PaymentReservationList}" var="PaymentReservationList">
 	<tr>
-		<td>${payment_reservation.payment_id}</td>
-		<td>${payment_reservation.reservation_id}</td>
-		<td>${payment_reservation.ticket_id}</td>
+		<td>${PaymentReservationList.payment_id}</td>
+		<td>${PaymentReservationList.reservation_id}</td>
+		<td>${PaymentReservationList.ticket_id}</td>
 	</tr>
 </c:forEach>
 </table>

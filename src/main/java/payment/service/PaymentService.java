@@ -34,4 +34,9 @@ public class PaymentService {
 		return paymentDao.findPayment();
 		
 	}
+	
+	public List<Object> findPaymentReservation() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return paymentDao.findPaymentReservation();
+		
+	}
 }

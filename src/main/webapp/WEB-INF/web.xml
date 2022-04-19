@@ -348,6 +348,18 @@
     <url-pattern>/findPayment</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>findPaymentReservation</display-name>
+    <servlet-name>findPaymentReservation</servlet-name>
+    <servlet-class>payment.web.servlet.findPaymentReservation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findPaymentReservation</servlet-name>
+    <url-pattern>/findPaymentReservation</url-pattern>
+  </servlet-mapping>
+  
+
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

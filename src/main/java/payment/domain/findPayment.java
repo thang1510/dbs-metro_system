@@ -9,6 +9,7 @@ public class findPayment {
 	private Integer reservation_id;
 	private Timestamp payment_date; 
 	private BigDecimal amount;
+
 	
 	/**
 	 * @return the payment_id
@@ -58,6 +59,9 @@ public class findPayment {
 	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
-	
+	/**
+	 * @return the ticket_id
+	 */
+
 
 }

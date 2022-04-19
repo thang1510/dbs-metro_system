@@ -7,10 +7,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.List;
 
 import payment.domain.Payment;
 import payment.domain.findPayment;
+import payment.domain.findPaymentR;
+import reservation.domain.Reservation;
+import ticket.domain.Ticket;
 
 /**
  * DDL functions performed in database
@@ -138,6 +142,7 @@ public class PaymentDao {
 			while(resultSet.next()){
 				findPayment payment = new findPayment();
 				
+				
 				payment.setPayment_id(Integer.parseInt(resultSet.getString("payment_id")));
 	    		payment.setReservation_id(Integer.parseInt(resultSet.getString("reservation_id")));
 	    		payment.setPayment_date(java.sql.Timestamp.valueOf(resultSet.getString("payment_date")));
@@ -150,6 +155,30 @@ public class PaymentDao {
 			throw new RuntimeException(e);
 		}
 		return list;
-		
+	}
+	
+	public List<Object> findPaymentReservation() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
+			String sql = "select * from payment_reservation_complex";
+			//String sql = "SELECT payment.payment_id, payment.reservation_id, reservation.ticket_id FROM dbs_metro_system.payment JOIN dbs_metro_system.reservation WHERE EXISTS ( SELECT payment_id FROM payment ) AND payment.amount > 50000;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Hashtable<String, Integer> my_dict = new Hashtable<String, Integer>();
+				my_dict.put("payment_id", Integer.parseInt(resultSet.getString("payment_id")));
+				my_dict.put("reservation_id", Integer.parseInt(resultSet.getString("reservation_id")));
+				my_dict.put("ticket_id", Integer.parseInt(resultSet.getString("ticket_id")));
+	
+	    		list.add(my_dict);
+	    		
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
 	}
 }
