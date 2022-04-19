@@ -26,10 +26,15 @@
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
  	<br />
+ 	
  	<h2>Simple Queries</h2>
  	<a href="<c:url value='/findTicket'/>" target="body">Please list all ticket having Time Depart >= '2022-01-03 13:23:00', and Time Arrive <= '2022-01-05 19:00:00' </a>&nbsp;&nbsp;
     
     <h2>Aggregate Queries</h2>
     <a href="<c:url value='/findPayment'/>" target="body">Please list all payment - the Amount is less than the average amount and Payment Date after '2022-01-04 14:21:00'</a>&nbsp;&nbsp;
+    
+    <h2>Complex Queries</h2>
+    <a href="<c:url value='/findPaymentReservation'/>" target="body">Please list all payment and reservation such that -  </a>&nbsp;&nbsp;
+    
   </body>
 </html>
