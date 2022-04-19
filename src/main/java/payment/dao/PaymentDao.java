@@ -12,9 +12,6 @@ import java.util.List;
 
 import payment.domain.Payment;
 import payment.domain.findPayment;
-import payment.domain.findPaymentR;
-import reservation.domain.Reservation;
-import ticket.domain.Ticket;
 
 /**
  * DDL functions performed in database
