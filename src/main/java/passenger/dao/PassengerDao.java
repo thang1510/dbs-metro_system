@@ -154,4 +154,30 @@ public class PassengerDao {
 		return list;
 		
 	}
+	
+	public List<Object> findPassengerComplex() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
+			//String sql = "select * from passenger_complex";
+			String sql = "SELECT passenger.passenger_id, fullname, amount FROM dbs_metro_system.passenger INNER JOIN dbs_metro_system.reservation INNER JOIN dbs_metro_system.payment WHERE passenger.passenger_id = reservation.passenger_id and payment.reservation_id = reservation.reservation_id AND amount > ( SELECT AVG(amount) FROM dbs_metro_system.payment ) AND year(passenger.join_date) > 2020;";
+			
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Hashtable<String, String> passenger = new Hashtable<String, String>();
+				passenger.put("passenger_id", resultSet.getString("passenger_id"));
+				passenger.put("fullname", resultSet.getString("fullname"));
+				passenger.put("amount", resultSet.getString("amount"));
+				
+				list.add(passenger);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
 }

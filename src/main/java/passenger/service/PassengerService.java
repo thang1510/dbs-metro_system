@@ -29,7 +29,12 @@ public class PassengerService {
 		if(entity1.getPassenger_id() !=null && entity1.getPassenger_id() == form.getPassenger_id()) throw new PassengerException("This passenger id has been registered before!");
 		passengerDao.add(form);
 	}
+	
 	public List<Object> findPassenger() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
 		return passengerDao.findPassenger();
+	}
+	
+	public List<Object> findPassengerComplex() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return passengerDao.findPassengerComplex();
 	}
 }

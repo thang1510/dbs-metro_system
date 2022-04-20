@@ -133,7 +133,8 @@ public class PaymentDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
-			String sql = "select * from payment_aggregate";
+			//String sql = "select * from payment_aggregate";
+			String sql = "SELECT * FROM dbs_metro_system.payment WHERE amount < ( SELECT AVG(amount) FROM dbs_metro_system.payment ) AND payment_date >= '2022-01-04 14:21:00';";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			ResultSet resultSet = preparestatement.executeQuery();			
 			while(resultSet.next()){

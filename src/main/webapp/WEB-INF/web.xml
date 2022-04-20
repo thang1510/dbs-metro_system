@@ -381,6 +381,17 @@
     <url-pattern>/findPaymentReservation</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>findPassengerComplex</display-name>
+    <servlet-name>findPassengerComplex</servlet-name>
+    <servlet-class>passenger.web.servlet.findPassengerComplex</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findPassengerComplex</servlet-name>
+    <url-pattern>/findPassengerComplex</url-pattern>
+  </servlet-mapping>
+
 
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

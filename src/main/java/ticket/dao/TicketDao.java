@@ -136,7 +136,8 @@ public class TicketDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
-			String sql = "select * from ticket_view";
+			//String sql = "select * from ticket_view";
+			String sql = "SELECT * FROM dbs_metro_system.ticket WHERE time_depart >= '2022-01-03 13:23:00' and time_arrive <= '2022-01-05 19:00:00' ORDER BY station_depart DESC;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			ResultSet resultSet = preparestatement.executeQuery();			
 			while(resultSet.next()){

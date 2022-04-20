@@ -38,8 +38,11 @@
     <br />
     <a href="<c:url value='/findTrain'/>" target="body">Please list all train such that </a>&nbsp;&nbsp;
     <br />
+    
     <h2>Complex Queries</h2>
     <a href="<c:url value='/findPaymentReservation'/>" target="body">Please list all payment and reservation such that -  </a>&nbsp;&nbsp;
-    
+    <br />
+    <a href="<c:url value='/findPassengerComplex'/>" target="body">Please list all passenger such that -  </a>&nbsp;&nbsp;
+    <br />
   </body>
 </html>
