@@ -159,15 +159,19 @@ public class PaymentDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
-			String sql = "select * from payment_reservation_complex";
-			//String sql = "SELECT payment.payment_id, payment.reservation_id, reservation.ticket_id FROM dbs_metro_system.payment JOIN dbs_metro_system.reservation WHERE EXISTS ( SELECT payment_id FROM payment ) AND payment.amount > 50000;";
+			//String sql = "select * from payment_reservation_complex";
+			String sql = "SELECT payment.payment_id, payment.reservation_id, reservation.ticket_id FROM dbs_metro_system.payment JOIN dbs_metro_system.reservation WHERE EXISTS ( SELECT payment_id FROM payment ) AND payment.amount > 50000;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			ResultSet resultSet = preparestatement.executeQuery();			
 			while(resultSet.next()){
-				Hashtable<String, Integer> my_dict = new Hashtable<String, Integer>();
-				my_dict.put("payment_id", Integer.parseInt(resultSet.getString("payment_id")));
-				my_dict.put("reservation_id", Integer.parseInt(resultSet.getString("reservation_id")));
-				my_dict.put("ticket_id", Integer.parseInt(resultSet.getString("ticket_id")));
+				Hashtable<String, String> my_dict = new Hashtable<String, String>();
+				my_dict.put("payment_id", resultSet.getString("payment_id"));
+				my_dict.put("reservation_id", resultSet.getString("reservation_id"));
+				my_dict.put("ticket_id", resultSet.getString("ticket_id"));
+				
+				//my_dict.put("payment_id", Integer.parseInt(resultSet.getString("payment_id")));
+				//my_dict.put("reservation_id", Integer.parseInt(resultSet.getString("reservation_id")));
+				//my_dict.put("ticket_id", Integer.parseInt(resultSet.getString("ticket_id")));
 	
 	    		list.add(my_dict);
 	    		
