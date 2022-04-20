@@ -1,13 +1,15 @@
 package train.service;
 
 
+import java.util.List;
+
 import train.dao.TrainDao;
 import train.domain.Train;
 
 
 /**
  * logic functions such as register, login
- * @author Duc Than Nguyen
+ * @author Duc Than Nguyen & Huu Thuan Thang Nguyen 
  *
  */
 public class TrainService {
@@ -26,5 +28,9 @@ public class TrainService {
 		Train entity1 = trainDao.findByTrainID(form.getTrain_id());
 		if(entity1.getTrain_id() !=null && entity1.getTrain_id() == form.getTrain_id()) throw new TrainException("This train id has been registered before!");
 		trainDao.add(form);
+	}
+	
+	public List<Object> findTrain() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return trainDao.findTrain();
 	}
 }

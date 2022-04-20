@@ -361,6 +361,17 @@
   
   <servlet>
     <description></description>
+    <display-name>findTrain</display-name>
+    <servlet-name>findTrain</servlet-name>
+    <servlet-class>train.web.servlet.findTrain</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findTrain</servlet-name>
+    <url-pattern>/findTrain</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>findPaymentReservation</display-name>
     <servlet-name>findPaymentReservation</servlet-name>
     <servlet-class>payment.web.servlet.findPaymentReservation</servlet-class>

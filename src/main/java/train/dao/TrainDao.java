@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
 
 import train.domain.Train;
 
@@ -119,5 +122,32 @@ public class TrainDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	public List<Object> findTrain() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/dbs_metro_system", MySQL_user, MySQL_password);
+			//String sql = "select * from train_aggregate";
+			String sql = "SELECT * FROM dbs_metro_system.train WHERE seat_number < ( SELECT AVG(seat_number) FROM dbs_metro_system.train ) and LENGTH(train_name) > 3;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Hashtable<String, String> train = new Hashtable<String, String>();
+				train.put("train_id", resultSet.getString("train_id"));
+				train.put("seat_number", resultSet.getString("seat_number"));
+				train.put("train_name", resultSet.getString("train_name"));
+				train.put("train_status", resultSet.getString("train_status"));
+				
+				list.add(train);
+	    		
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 }
