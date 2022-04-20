@@ -35,7 +35,9 @@
     
     <h2>Aggregate Queries</h2>
     <a href="<c:url value='/findPayment'/>" target="body">Please list all payment - the Amount is less than the average amount and Payment Date after '2022-01-04 14:21:00'</a>&nbsp;&nbsp;
-    
+    <br />
+    <a href="<c:url value='/findTrain'/>" target="body">Please list all train such that </a>&nbsp;&nbsp;
+    <br />
     <h2>Complex Queries</h2>
     <a href="<c:url value='/findPaymentReservation'/>" target="body">Please list all payment and reservation such that -  </a>&nbsp;&nbsp;
     
