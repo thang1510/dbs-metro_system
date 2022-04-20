@@ -1,13 +1,15 @@
 package passenger.service;
 
 
+import java.util.List;
+
 import passenger.dao.PassengerDao;
 import passenger.domain.Passenger;
 
 
 /**
  * logic functions such as register, login
- * @author Duc Than Nguyen
+ * @author Duc Than Nguyen & Huu Thuan Thang Nguyen
  *
  */
 public class PassengerService {
@@ -26,5 +28,8 @@ public class PassengerService {
 		Passenger entity1 = passengerDao.findByPassengerID(form.getPassenger_id());
 		if(entity1.getPassenger_id() !=null && entity1.getPassenger_id() == form.getPassenger_id()) throw new PassengerException("This passenger id has been registered before!");
 		passengerDao.add(form);
+	}
+	public List<Object> findPassenger() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return passengerDao.findPassenger();
 	}
 }

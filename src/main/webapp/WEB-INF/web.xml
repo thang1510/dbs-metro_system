@@ -339,6 +339,17 @@
   
   <servlet>
     <description></description>
+    <display-name>findPassenger</display-name>
+    <servlet-name>findPassenger</servlet-name>
+    <servlet-class>passenger.web.servlet.findPassenger</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findPassenger</servlet-name>
+    <url-pattern>/findPassenger</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>findPayment</display-name>
     <servlet-name>findPayment</servlet-name>
     <servlet-class>payment.web.servlet.findPayment</servlet-class>
