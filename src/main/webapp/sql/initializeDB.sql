@@ -1,3 +1,5 @@
+drop database dbs_metro_system; 
+create database dbs_metro_system; 
 use  dbs_metro_system;
 
 -- table: passenger
