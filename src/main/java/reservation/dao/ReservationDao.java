@@ -40,7 +40,7 @@ public class ReservationDao {
 		    		reservation.setReservation_id(reservation_id);
 		    		reservation.setPassenger_id(Integer.parseInt(resultSet.getString("passenger_id")));
 		    		reservation.setTicket_id(Integer.parseInt(resultSet.getString("ticket_id")));
-		    		reservation.setReservation_status(Boolean.parseBoolean(resultSet.getString("reservation_status")));
+		    		reservation.setReservation_status(Byte.parseByte(resultSet.getString("reservation_status")));
 		    		reservation.setReservation_date(java.sql.Timestamp.valueOf(resultSet.getString("reservation_date")));
 		    	}
 		    }
@@ -69,7 +69,7 @@ public class ReservationDao {
 		    preparestatement.setInt(1,form.getReservation_id());
 		    preparestatement.setInt(2,form.getPassenger_id());
 		    preparestatement.setInt(3,form.getTicket_id());
-		    preparestatement.setBoolean(4, form.getReservation_status());
+		    preparestatement.setByte(4, form.getReservation_status());
 		    preparestatement.setTimestamp(5,form.getReservation_date());
 		    preparestatement.executeUpdate();
 		    connect.close();
@@ -94,7 +94,7 @@ public class ReservationDao {
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getPassenger_id());
 		    preparestatement.setInt(2,form.getTicket_id());
-		    preparestatement.setBoolean(3, form.getReservation_status());
+		    preparestatement.setByte(3, form.getReservation_status());
 		    preparestatement.setTimestamp(4,form.getReservation_date());
 		    preparestatement.setInt(5,form.getReservation_id());
 		    preparestatement.executeUpdate();

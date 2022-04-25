@@ -78,7 +78,7 @@ public class ReservationServletUpdate extends HttpServlet {
 			form.setReservation_id(Integer.parseInt(info.get(1)));
 			form.setPassenger_id(Integer.parseInt(info.get(2)));
 			form.setTicket_id(Integer.parseInt(info.get(3)));
-			form.setReservation_status(Boolean.parseBoolean(info.get(4)));
+			form.setReservation_status(Byte.parseByte(info.get(4)));
 			form.setReservation_date(java.sql.Timestamp.valueOf(info.get(5)));
 
 			try {

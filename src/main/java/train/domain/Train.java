@@ -15,7 +15,7 @@ public class Train {
 	private Integer train_id;
 	private Integer seat_number;
 	private String train_name; 
-	private Boolean train_status;
+	private byte train_status;
 	/**
 	 * @return the train_id
 	 */
@@ -55,15 +55,16 @@ public class Train {
 	/**
 	 * @return the train_status
 	 */
-	public Boolean getTrain_status() {
+	public byte getTrain_status() {
 		return train_status;
 	}
 	/**
 	 * @param train_status the train_status to set
 	 */
-	public void setTrain_status(Boolean train_status) {
+	public void setTrain_status(byte train_status) {
 		this.train_status = train_status;
 	}
+	
 	
 	
 }

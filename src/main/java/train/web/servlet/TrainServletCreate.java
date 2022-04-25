@@ -52,7 +52,7 @@ public class TrainServletCreate extends HttpServlet {
 		form.setTrain_id(Integer.parseInt(info.get(0)));
 		form.setSeat_number(Integer.parseInt(info.get(1)));
 		form.setTrain_name(info.get(2));
-		form.setTrain_status(Boolean.valueOf(info.get(3)));
+		form.setTrain_status(Byte.valueOf(info.get(3)));
 				
 		try {
 			entity1service.create(form);

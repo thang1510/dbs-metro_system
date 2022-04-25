@@ -16,7 +16,7 @@ public class Reservation {
 	private Integer reservation_id;
 	private Integer passenger_id; 
 	private Integer ticket_id;
-	private Boolean reservation_status;
+	private byte reservation_status;
 	private Timestamp reservation_date;
 	
 	/**
@@ -58,13 +58,13 @@ public class Reservation {
 	/**
 	 * @return the reservation_status
 	 */
-	public Boolean getReservation_status() {
+	public byte getReservation_status() {
 		return reservation_status;
 	}
 	/**
 	 * @param reservation_status the reservation_status to set
 	 */
-	public void setReservation_status(Boolean reservation_status) {
+	public void setReservation_status(byte reservation_status) {
 		this.reservation_status = reservation_status;
 	}
 	/**

@@ -42,7 +42,7 @@ public class TrainDao {
 		    		train.setTrain_id(train_id);
 		    		train.setSeat_number(Integer.parseInt(resultSet.getString("seat_number")));
 		    		train.setTrain_name(resultSet.getString("train_name"));
-		    		train.setTrain_status(Boolean.parseBoolean(resultSet.getString("train_status")));
+		    		train.setTrain_status(Byte.parseByte(resultSet.getString("train_status")));
 		    	}
 		    }
 		    connect.close();
@@ -70,7 +70,7 @@ public class TrainDao {
 		    preparestatement.setInt(1,form.getTrain_id());
 		    preparestatement.setInt(2,form.getSeat_number());
 		    preparestatement.setString(3,form.getTrain_name());
-		    preparestatement.setBoolean(4,form.getTrain_status());
+		    preparestatement.setByte(4,form.getTrain_status());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -94,7 +94,7 @@ public class TrainDao {
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,form.getSeat_number());
 		    preparestatement.setString(2,form.getTrain_name());
-		    preparestatement.setBoolean(3,form.getTrain_status());
+		    preparestatement.setByte(3,form.getTrain_status());
 		    preparestatement.setInt(4,form.getTrain_id());
 		    preparestatement.executeUpdate();
 		    connect.close();

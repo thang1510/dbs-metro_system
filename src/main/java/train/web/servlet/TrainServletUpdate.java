@@ -78,7 +78,7 @@ public class TrainServletUpdate extends HttpServlet {
 			form.setTrain_id(Integer.parseInt(info.get(1)));
 			form.setSeat_number(Integer.parseInt(info.get(2)));
 			form.setTrain_name(info.get(3));
-			form.setTrain_status(Boolean.valueOf(info.get(4)));
+			form.setTrain_status(Byte.valueOf(info.get(4)));
 
 			try {
 				trainDao.update(form);

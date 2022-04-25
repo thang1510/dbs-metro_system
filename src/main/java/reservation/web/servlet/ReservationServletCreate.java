@@ -53,7 +53,7 @@ public class ReservationServletCreate extends HttpServlet {
 		form.setReservation_id(Integer.parseInt(info.get(0)));
 		form.setPassenger_id(Integer.parseInt(info.get(1)));
 		form.setTicket_id(Integer.parseInt(info.get(2)));
-		form.setReservation_status(Boolean.parseBoolean(info.get(3)));
+		form.setReservation_status(Byte.parseByte(info.get(3)));
 		form.setReservation_date(java.sql.Timestamp.valueOf(info.get(4)));
 
 		
