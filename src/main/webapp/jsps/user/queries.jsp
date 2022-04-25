@@ -28,22 +28,28 @@
  	<br />
  	
  	<h2>Simple Queries</h2>
+ 	<!--  passenger/q2_passenger_view -->
  	<a href="<c:url value='/findPassenger'/>" target="body">Simple Query 1</a>&nbsp;&nbsp;
  	<br />
+ 	<!--  ticket/q2_ticket_view -->
  	<a href="<c:url value='/findTicket'/>" target="body">Simple Query 2</a>&nbsp;&nbsp;
     <br />
     
     
     <h2>Aggregate Queries</h2>
+    <!--  train/q3_train_aggregate -->
     <a href="<c:url value='/findTrain'/>" target="body">Aggregate Query 1</a>&nbsp;&nbsp;
     <br />
+     <!--  payment/q3_payment_aggregate -->
     <a href="<c:url value='/findPayment'/>" target="body">Aggregate Query 2</a>&nbsp;&nbsp;
     <br />
     
     
     <h2>Complex Queries</h2>
+    <!--  passenger/q4_passenger_complex -->
     <a href="<c:url value='/findPassengerComplex'/>" target="body">Complex Query 1</a>&nbsp;&nbsp;
     <br />
+     <!--  payment/q4_payment_reservation_complex -->
     <a href="<c:url value='/findPaymentReservation'/>" target="body">Complex Query 2</a>&nbsp;&nbsp;
     <br />
   </body>
