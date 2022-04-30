@@ -39,4 +39,5 @@
 - [x] Q4 Physical design
 - [x] Q5 Documentation folder
 
-## PD8
+## - Finishing project
+- [x] Done.
