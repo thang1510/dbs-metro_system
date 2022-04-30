@@ -40,7 +40,7 @@ CREATE TABLE reservation (
     ticket_id int NOT NULL UNIQUE,
     reservation_status boolean NOT NULL,
     reservation_date DATETIME NOT NULL,
-    PRIMARY KEY (passenger_id),
+    PRIMARY KEY (reservation_id),
     FOREIGN KEY (passenger_id) REFERENCES passenger(passenger_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY (ticket_id) REFERENCES ticket(ticket_id) ON DELETE RESTRICT
 );

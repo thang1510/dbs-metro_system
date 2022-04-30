@@ -63,7 +63,7 @@ CREATE TABLE `passenger` (
 
 LOCK TABLES `passenger` WRITE;
 /*!40000 ALTER TABLE `passenger` DISABLE KEYS */;
-INSERT INTO `passenger` VALUES (1,'Takanashi Kiara','1234 Random st','2020-01-03 11:43:00'),(2,'Gawr Gura','HololiveEN st','2020-01-04 12:27:00'),(3,'Ninomae Ina\'nis','Takobell boulevard','2021-01-05 19:45:00'),(4,'Le Thanh Thao','61 Sheridan st','2019-01-05 19:41:00'),(5,'Nguyen Duc Nghia','75 West st','2021-01-06 12:45:00');
+INSERT INTO `passenger` VALUES  (1,'Luong Viet Thang','1234 Random st','2020-01-03 11:43:00'),(2,'Tran Duc Tai','HololiveEN st','2020-01-04 12:27:00'),(3,'Tran Thanh Thien','Takobell boulevard','2021-01-05 19:45:00'),(4,'Le Thanh Thao','661 West Sheridan st','2019-01-05 19:41:00'),(5,'Nguyen Duc Nghia','75 West st','2021-01-06 12:45:00');
 /*!40000 ALTER TABLE `passenger` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,7 +110,7 @@ CREATE TABLE `reservation` (
   `ticket_id` int NOT NULL,
   `reservation_status` tinyint(1) NOT NULL,
   `reservation_date` datetime NOT NULL,
-  PRIMARY KEY (`passenger_id`),
+  PRIMARY KEY (`reservation_id`),
   UNIQUE KEY `reservation_id` (`reservation_id`),
   UNIQUE KEY `passenger_id` (`passenger_id`),
   UNIQUE KEY `ticket_id` (`ticket_id`),
