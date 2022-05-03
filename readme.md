@@ -1,4 +1,4 @@
-## Table of Contents (Final verison - Project finished) 
+## Table of Contents (Final Version - Project Finished) 
 1. [Database](#database)
 
 1. [Author(s)](#author)
